@@ -1,0 +1,2338 @@
+fileFormatVersion: 2
+guid: 95f3be641872d064e95401f0611db9c4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 4
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638643507670254596
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: King_Mewrthur_Frame_0
+    originalName: 
+    pivot: {x: 0.16666651, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 472
+      width: 12
+      height: 15
+    spriteID: c8fd339ffabb92e4e8deca409353111d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 472}
+  - name: King_Mewrthur_Frame_1
+    originalName: 
+    pivot: {x: 0.30769238, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 194
+      width: 13
+      height: 15
+    spriteID: 4fab246b88123e74ba068fc9d948704a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 194}
+  - name: King_Mewrthur_Frame_2
+    originalName: 
+    pivot: {x: 0.28571436, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 27
+      width: 14
+      height: 16
+    spriteID: 062d1d261e1cc97448d68658f4638e28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 27}
+  - name: King_Mewrthur_Frame_3
+    originalName: 
+    pivot: {x: 0.28571436, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 122
+      width: 14
+      height: 16
+    spriteID: 5c2092ce71971c94db3bc33aa5a746ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 128, y: 122}
+  - name: King_Mewrthur_Frame_4
+    originalName: 
+    pivot: {x: 0.23076938, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 263
+      width: 13
+      height: 15
+    spriteID: 54949788dc834954d991371cd9456305
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 263}
+  - name: King_Mewrthur_Frame_5
+    originalName: 
+    pivot: {x: 0.16666651, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 362
+      width: 12
+      height: 14
+    spriteID: 2cc7ab2665f02574ab15c55ee9ea1954
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 362}
+  - name: King_Mewrthur_Frame_6
+    originalName: 
+    pivot: {x: 0.18181801, y: -1.2142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 450
+      width: 11
+      height: 14
+    spriteID: 007609f7548d5254ea70bb21cff0dd00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 450}
+  - name: King_Mewrthur_Frame_7
+    originalName: 
+    pivot: {x: 0.16666651, y: -1.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 384
+      width: 12
+      height: 14
+    spriteID: 3e98a9e50e6839a4d8ea81c537bb8a34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 384}
+  - name: King_Mewrthur_Frame_8
+    originalName: 
+    pivot: {x: 0.16666651, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 491
+      width: 12
+      height: 16
+    spriteID: 3b7be4a46ee8f26438d0cc411c20b1b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 491}
+  - name: King_Mewrthur_Frame_9
+    originalName: 
+    pivot: {x: 0.18181801, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 133
+      width: 11
+      height: 15
+    spriteID: 4830b5fee3408f243b9d8c2f83acc9c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 133}
+  - name: King_Mewrthur_Frame_10
+    originalName: 
+    pivot: {x: 0.18181801, y: -1.2142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 472
+      width: 11
+      height: 14
+    spriteID: ff4fc47c8ac2cf745a2b5bced9466fe1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 472}
+  - name: King_Mewrthur_Frame_11
+    originalName: 
+    pivot: {x: 0.16666651, y: -1.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 406
+      width: 12
+      height: 14
+    spriteID: f846936373cdaf34096a2fccfabffb77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 406}
+  - name: King_Mewrthur_Frame_12
+    originalName: 
+    pivot: {x: 0.16666651, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 424
+      width: 12
+      height: 16
+    spriteID: 5ed48f8223cdbea42b58a677033ca745
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 424}
+  - name: King_Mewrthur_Frame_13
+    originalName: 
+    pivot: {x: 0.099999905, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 310
+      width: 10
+      height: 15
+    spriteID: d3ad3cfe37718d348abee52e596810d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 310}
+  - name: King_Mewrthur_Frame_14
+    originalName: 
+    pivot: {x: 0.41666666, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 270
+      width: 12
+      height: 15
+    spriteID: cec3ec4b87e8153449d7aef336cc0e6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 270}
+  - name: King_Mewrthur_Frame_15
+    originalName: 
+    pivot: {x: 0.41666666, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 448
+      width: 12
+      height: 16
+    spriteID: 1056cb363e9f7d94398ba31423aa84c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 448}
+  - name: King_Mewrthur_Frame_16
+    originalName: 
+    pivot: {x: 0.46666655, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 99
+      width: 15
+      height: 15
+    spriteID: 2ee7988be19f37841bc28aa14d3f8045
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 134, y: 99}
+  - name: King_Mewrthur_Frame_17
+    originalName: 
+    pivot: {x: 0.25000015, y: -0.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 395
+      width: 12
+      height: 20
+    spriteID: bb7ca89523230a8449f3ef17970e3eca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 395}
+  - name: King_Mewrthur_Frame_18
+    originalName: 
+    pivot: {x: 0.25000015, y: -0.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 390
+      width: 12
+      height: 20
+    spriteID: cb26b62559972744e854c736f67e9acd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 390}
+  - name: King_Mewrthur_Frame_19
+    originalName: 
+    pivot: {x: 0.35714287, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 418
+      width: 14
+      height: 16
+    spriteID: e1636fb4a9c62ab4eb6f81cc66b12477
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 418}
+  - name: King_Mewrthur_Frame_20
+    originalName: 
+    pivot: {x: 0.30769238, y: -1.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 309
+      width: 13
+      height: 14
+    spriteID: 117c8037b3a911345b2311b41b827c8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 309}
+  - name: King_Mewrthur_Frame_21
+    originalName: 
+    pivot: {x: 0.25000015, y: -0.88888896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 372
+      width: 12
+      height: 18
+    spriteID: 2cf76ea984f4c1d438076843cc98fb53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 372}
+  - name: King_Mewrthur_Frame_22
+    originalName: 
+    pivot: {x: 0.25000015, y: -0.88888896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 398
+      width: 12
+      height: 18
+    spriteID: 12bc08a137cc32c44a4d7ae873650266
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 398}
+  - name: King_Mewrthur_Frame_23
+    originalName: 
+    pivot: {x: 0.35714287, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 442
+      width: 14
+      height: 16
+    spriteID: f2323555aa576a34f907e1f823290722
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 442}
+  - name: King_Mewrthur_Frame_24
+    originalName: 
+    pivot: {x: 0.35714287, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 53
+      width: 14
+      height: 15
+    spriteID: 63d3d95bebdd4f2489d52eb1fbeb7102
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 53}
+  - name: King_Mewrthur_Frame_25
+    originalName: 
+    pivot: {x: 0.35714287, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 76
+      width: 14
+      height: 15
+    spriteID: 0962cca5a45efc44181aacf9e1a61206
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 76}
+  - name: King_Mewrthur_Frame_26
+    originalName: 
+    pivot: {x: 1.1666667, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 293
+      width: 12
+      height: 15
+    spriteID: 4b496ac8b9a06fd4f8aec97b3b877f17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 293}
+  - name: King_Mewrthur_Frame_27
+    originalName: 
+    pivot: {x: 1.0666666, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 171
+      width: 15
+      height: 14
+    spriteID: 51cb9f15a6d068a40a27b6b6ea2e3a61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 171}
+  - name: King_Mewrthur_Frame_28
+    originalName: 
+    pivot: {x: 1.025, y: -0.8421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 283
+      width: 40
+      height: 19
+    spriteID: 74ce5630416011f4092c243f4f951d24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 283}
+  - name: King_Mewrthur_Frame_29
+    originalName: 
+    pivot: {x: 1, y: -0.88888896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 133
+      width: 60
+      height: 18
+    spriteID: 473003ab14c3bc64198f1e79efe557f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 133}
+  - name: King_Mewrthur_Frame_30
+    originalName: 
+    pivot: {x: 1.0000001, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 109
+      width: 68
+      height: 16
+    spriteID: f35d7fe753606d748b7b174413f8b286
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 109}
+  - name: King_Mewrthur_Frame_31
+    originalName: 
+    pivot: {x: 1, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 217
+      width: 20
+      height: 15
+    spriteID: 8db7d73342901f14eb8edcdb59a08b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 128, y: 217}
+  - name: King_Mewrthur_Frame_32
+    originalName: 
+    pivot: {x: 1, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 57
+      y: 76
+      width: 25
+      height: 15
+    spriteID: 84842c04188d762438c1f06b7283276f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 57, y: 76}
+  - name: King_Mewrthur_Frame_33
+    originalName: 
+    pivot: {x: 0.99999994, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 171
+      width: 31
+      height: 15
+    spriteID: 1fd2555d6aa666643958b21664b2f4da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 171}
+  - name: King_Mewrthur_Frame_34
+    originalName: 
+    pivot: {x: 0.107142925, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 240
+      width: 28
+      height: 15
+    spriteID: db0b035b25c66d145b1af08d5b9e6126
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 240}
+  - name: King_Mewrthur_Frame_35
+    originalName: 
+    pivot: {x: 0.17857143, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 263
+      width: 28
+      height: 15
+    spriteID: d5058246972a6014a9559cd69b32fe5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 263}
+  - name: King_Mewrthur_Frame_36
+    originalName: 
+    pivot: {x: 0.16129032, y: -0.88888896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 27
+      width: 31
+      height: 18
+    spriteID: c862c4b8b14fc7e488c971318afca9c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 27}
+  - name: King_Mewrthur_Frame_37
+    originalName: 
+    pivot: {x: 0.13513513, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 182
+      width: 37
+      height: 25
+    spriteID: be96e433280c925468e3aa5ccfaa922e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 182}
+  - name: King_Mewrthur_Frame_38
+    originalName: 
+    pivot: {x: 0.08888891, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 45
+      height: 25
+    spriteID: c454ae08e638c9b41b4395b18bab84d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: King_Mewrthur_Frame_39
+    originalName: 
+    pivot: {x: 0.06521743, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 46
+      height: 25
+    spriteID: 0ddb1cb3d484add41ab6de2bf2d33438
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: King_Mewrthur_Frame_40
+    originalName: 
+    pivot: {x: 0.04878044, y: -0.7619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 254
+      width: 41
+      height: 21
+    spriteID: 08632e8127e6e5449824d730e8f9013b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 254}
+  - name: King_Mewrthur_Frame_41
+    originalName: 
+    pivot: {x: 0.08333339, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 53
+      width: 36
+      height: 15
+    spriteID: 7834594a480864e438194cf6f2485fbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 53}
+  - name: King_Mewrthur_Frame_42
+    originalName: 
+    pivot: {x: 0.107142925, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 286
+      width: 28
+      height: 15
+    spriteID: d557f124df2506747b3791237e300b9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 286}
+  - name: King_Mewrthur_Frame_43
+    originalName: 
+    pivot: {x: 0.103448346, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 217
+      width: 29
+      height: 15
+    spriteID: fb92ffa96ab644c4ba6f0343b420e60f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 217}
+  - name: King_Mewrthur_Frame_44
+    originalName: 
+    pivot: {x: 0.088235356, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 148
+      width: 34
+      height: 15
+    spriteID: 7acedb55264c04545835d802c7fd272f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 148}
+  - name: King_Mewrthur_Frame_45
+    originalName: 
+    pivot: {x: 0.08333339, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 76
+      width: 36
+      height: 15
+    spriteID: 46741a65a52c01d43b82b568f5b2bae1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 76}
+  - name: King_Mewrthur_Frame_46
+    originalName: 
+    pivot: {x: 0.08571435, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 99
+      width: 35
+      height: 15
+    spriteID: bb6c93c63bf958643bcb3881cf855c9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 99}
+  - name: King_Mewrthur_Frame_47
+    originalName: 
+    pivot: {x: 0.07142851, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 309
+      width: 28
+      height: 15
+    spriteID: af0f285844dfd664fa5d3e66382dfed4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 309}
+  - name: King_Mewrthur_Frame_48
+    originalName: 
+    pivot: {x: 0.12903228, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 194
+      width: 31
+      height: 15
+    spriteID: b61dd9f379029e84ca5d5ed59a75079e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 194}
+  - name: King_Mewrthur_Frame_49
+    originalName: 
+    pivot: {x: 0.13043486, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 332
+      width: 23
+      height: 14
+    spriteID: da6e091c290608242a5e6a8e6258ddb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 332}
+  - name: King_Mewrthur_Frame_50
+    originalName: 
+    pivot: {x: 0.13636373, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 240
+      width: 22
+      height: 14
+    spriteID: 860fd06c80a225947ab3c01b4f939184
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 240}
+  - name: King_Mewrthur_Frame_51
+    originalName: 
+    pivot: {x: 0.12000008, y: -0.94117653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 58
+      y: 43
+      width: 25
+      height: 17
+    spriteID: 4f035688e586b5a4192e602a0d945e2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 58, y: 43}
+  - name: King_Mewrthur_Frame_52
+    originalName: 
+    pivot: {x: 0.13793106, y: -0.88888896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 122
+      width: 29
+      height: 18
+    spriteID: bb6b22baa005427498d1edcacbdc87a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 122}
+  - name: King_Mewrthur_Frame_53
+    originalName: 
+    pivot: {x: 0.16129032, y: -0.8421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 432
+      width: 31
+      height: 19
+    spriteID: 85f94b1ffed82f642a9ce2af7d062451
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 432}
+  - name: King_Mewrthur_Frame_54
+    originalName: 
+    pivot: {x: 0.15384619, y: -0.1724138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 310
+      width: 26
+      height: 29
+    spriteID: d0fa83075e299a44489175c97c57f5c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 310}
+  - name: King_Mewrthur_Frame_55
+    originalName: 
+    pivot: {x: 0.17857143, y: -0.16129032}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 215
+      width: 28
+      height: 31
+    spriteID: a9b7fbacfc6e67042a4497ca4cc3c679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 215}
+  - name: King_Mewrthur_Frame_56
+    originalName: 
+    pivot: {x: 0.086956434, y: -0.1724138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 395
+      width: 23
+      height: 29
+    spriteID: 25b32a302f6d5f04695e49783b6da70f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 395}
+  - name: King_Mewrthur_Frame_57
+    originalName: 
+    pivot: {x: 0.14814818, y: -0.085714296}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 182
+      width: 27
+      height: 35
+    spriteID: 37292eb4deaa0e44888292a811aa450f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 182}
+  - name: King_Mewrthur_Frame_58
+    originalName: 
+    pivot: {x: 0.14814818, y: -0.7619048}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 459
+      width: 27
+      height: 21
+    spriteID: c2e0e8b8db1e4e14493feabbfeaba0a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 459}
+  - name: King_Mewrthur_Frame_59
+    originalName: 
+    pivot: {x: 0.25, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 488
+      width: 40
+      height: 14
+    spriteID: 7c599d443c68f084abb7660fde6d0119
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 488}
+  - name: King_Mewrthur_Frame_60
+    originalName: 
+    pivot: {x: 0.32758623, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 4
+      width: 58
+      height: 15
+    spriteID: 7cc11a5561569ad458d05704d0a8fa28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 4}
+  - name: King_Mewrthur_Frame_61
+    originalName: 
+    pivot: {x: 0.36619717, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 159
+      width: 71
+      height: 15
+    spriteID: 6198ec17fa347524db014c982370476d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 159}
+  - name: King_Mewrthur_Frame_62
+    originalName: 
+    pivot: {x: 0.39240506, y: -0.516129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 79
+      height: 31
+    spriteID: 339d70b8a9526e84ea03e510038b49d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: King_Mewrthur_Frame_63
+    originalName: 
+    pivot: {x: -0.058823757, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 347
+      width: 17
+      height: 40
+    spriteID: 0ece379d7e57fca41a1a04c846809e9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 347}
+  - name: King_Mewrthur_Frame_64
+    originalName: 
+    pivot: {x: 0, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 347
+      width: 14
+      height: 40
+    spriteID: 8bd1bdc5eaafba54e8a00e97991ec497
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 347}
+  - name: King_Mewrthur_Frame_65
+    originalName: 
+    pivot: {x: -0.07692337, y: -0.4324324}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 225
+      width: 13
+      height: 37
+    spriteID: 3d3f80af92ea5f547a7aa6d3d99b50b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 225}
+  - name: King_Mewrthur_Frame_66
+    originalName: 
+    pivot: {x: -0.07692337, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 286
+      width: 13
+      height: 15
+    spriteID: 329c3ef5800997448bea7a316acfa8fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 286}
+  - name: King_Mewrthur_Frame_67
+    originalName: 
+    pivot: {x: -0.16666651, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 316
+      width: 12
+      height: 15
+    spriteID: 2048ae138d1bbea439b247363cf52774
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 316}
+  - name: King_Mewrthur_Frame_68
+    originalName: 
+    pivot: {x: 0, y: -0.94117653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 466
+      width: 13
+      height: 17
+    spriteID: d46c6cb965ea83d49b4c2445e15b347f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 466}
+  - name: King_Mewrthur_Frame_69
+    originalName: 
+    pivot: {x: -0.16666651, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 428
+      width: 12
+      height: 14
+    spriteID: 8a1d0578afa387745b00fb9cf3a1fd1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 428}
+  - name: King_Mewrthur_Frame_70
+    originalName: 
+    pivot: {x: 0.16666651, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 339
+      width: 12
+      height: 15
+    spriteID: 368f6fb70329f3d43a2c3345adaf43d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 339}
+  - name: King_Mewrthur_Frame_71
+    originalName: 
+    pivot: {x: 0.18750012, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 148
+      width: 16
+      height: 15
+    spriteID: b712518c9bed5314082d4c4a7164a31c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 133, y: 148}
+  - name: King_Mewrthur_Frame_72
+    originalName: 
+    pivot: {x: -0.03703718, y: -1.7777779}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 332
+      width: 27
+      height: 9
+    spriteID: c3c8ea0ee22c9ac4596a366df9eb19cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 332}
+  - name: King_Mewrthur_Frame_73
+    originalName: 
+    pivot: {x: -0.107142925, y: -1.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 354
+      width: 28
+      height: 10
+    spriteID: e564cfc8f39f71a4bad1def5cbcf2193
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 354}
+  - name: King_Mewrthur_Frame_74
+    originalName: 
+    pivot: {x: -0.107142925, y: -1.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 372
+      width: 28
+      height: 10
+    spriteID: 6631933ae63be2f4dbffed45c684f959
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 372}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1203937286
+    name: King_Mewrthur
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: King_Mewrthur_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 12
+        height: 15
+      spriteId: c8fd339ffabb92e4e8deca409353111d
+    - name: King_Mewrthur_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 13
+        height: 15
+      spriteId: 4fab246b88123e74ba068fc9d948704a
+    - name: King_Mewrthur_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 14
+        height: 16
+      spriteId: 062d1d261e1cc97448d68658f4638e28
+    - name: King_Mewrthur_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 14
+        height: 16
+      spriteId: 5c2092ce71971c94db3bc33aa5a746ad
+    - name: King_Mewrthur_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 13
+        height: 15
+      spriteId: 54949788dc834954d991371cd9456305
+    - name: King_Mewrthur_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 12
+        height: 14
+      spriteId: 2cc7ab2665f02574ab15c55ee9ea1954
+    - name: King_Mewrthur_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 17
+        width: 11
+        height: 14
+      spriteId: 007609f7548d5254ea70bb21cff0dd00
+    - name: King_Mewrthur_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 18
+        width: 12
+        height: 14
+      spriteId: 3e98a9e50e6839a4d8ea81c537bb8a34
+    - name: King_Mewrthur_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 12
+        height: 16
+      spriteId: 3b7be4a46ee8f26438d0cc411c20b1b6
+    - name: King_Mewrthur_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 11
+        height: 15
+      spriteId: 4830b5fee3408f243b9d8c2f83acc9c2
+    - name: King_Mewrthur_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 17
+        width: 11
+        height: 14
+      spriteId: ff4fc47c8ac2cf745a2b5bced9466fe1
+    - name: King_Mewrthur_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 18
+        width: 12
+        height: 14
+      spriteId: f846936373cdaf34096a2fccfabffb77
+    - name: King_Mewrthur_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 12
+        height: 16
+      spriteId: 5ed48f8223cdbea42b58a677033ca745
+    - name: King_Mewrthur_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 79
+        y: 16
+        width: 10
+        height: 15
+      spriteId: d3ad3cfe37718d348abee52e596810d3
+    - name: King_Mewrthur_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 12
+        height: 15
+      spriteId: cec3ec4b87e8153449d7aef336cc0e6b
+    - name: King_Mewrthur_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 12
+        height: 16
+      spriteId: 1056cb363e9f7d94398ba31423aa84c2
+    - name: King_Mewrthur_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 73
+        y: 16
+        width: 15
+        height: 15
+      spriteId: 2ee7988be19f37841bc28aa14d3f8045
+    - name: King_Mewrthur_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 12
+        width: 12
+        height: 20
+      spriteId: bb7ca89523230a8449f3ef17970e3eca
+    - name: King_Mewrthur_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 12
+        width: 12
+        height: 20
+      spriteId: cb26b62559972744e854c736f67e9acd
+    - name: King_Mewrthur_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 14
+        height: 16
+      spriteId: e1636fb4a9c62ab4eb6f81cc66b12477
+    - name: King_Mewrthur_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 18
+        width: 13
+        height: 14
+      spriteId: 117c8037b3a911345b2311b41b827c8a
+    - name: King_Mewrthur_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 12
+        height: 18
+      spriteId: 2cf76ea984f4c1d438076843cc98fb53
+    - name: King_Mewrthur_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 12
+        height: 18
+      spriteId: 12bc08a137cc32c44a4d7ae873650266
+    - name: King_Mewrthur_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 14
+        height: 16
+      spriteId: f2323555aa576a34f907e1f823290722
+    - name: King_Mewrthur_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 14
+        height: 15
+      spriteId: 63d3d95bebdd4f2489d52eb1fbeb7102
+    - name: King_Mewrthur_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 14
+        height: 15
+      spriteId: 0962cca5a45efc44181aacf9e1a61206
+    - name: King_Mewrthur_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 16
+        width: 12
+        height: 15
+      spriteId: 4b496ac8b9a06fd4f8aec97b3b877f17
+    - name: King_Mewrthur_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 16
+        width: 15
+        height: 14
+      spriteId: 51cb9f15a6d068a40a27b6b6ea2e3a61
+    - name: King_Mewrthur_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 16
+        width: 40
+        height: 19
+      spriteId: 74ce5630416011f4092c243f4f951d24
+    - name: King_Mewrthur_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 16
+        width: 60
+        height: 18
+      spriteId: 473003ab14c3bc64198f1e79efe557f5
+    - name: King_Mewrthur_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 16
+        width: 68
+        height: 16
+      spriteId: f35d7fe753606d748b7b174413f8b286
+    - name: King_Mewrthur_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 16
+        width: 20
+        height: 15
+      spriteId: 8db7d73342901f14eb8edcdb59a08b79
+    - name: King_Mewrthur_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 16
+        width: 25
+        height: 15
+      spriteId: 84842c04188d762438c1f06b7283276f
+    - name: King_Mewrthur_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 49
+        y: 16
+        width: 31
+        height: 15
+      spriteId: 1fd2555d6aa666643958b21664b2f4da
+    - name: King_Mewrthur_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 28
+        height: 15
+      spriteId: db0b035b25c66d145b1af08d5b9e6126
+    - name: King_Mewrthur_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 28
+        height: 15
+      spriteId: d5058246972a6014a9559cd69b32fe5b
+    - name: King_Mewrthur_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 31
+        height: 18
+      spriteId: c862c4b8b14fc7e488c971318afca9c2
+    - name: King_Mewrthur_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 37
+        height: 25
+      spriteId: be96e433280c925468e3aa5ccfaa922e
+    - name: King_Mewrthur_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 45
+        height: 25
+      spriteId: c454ae08e638c9b41b4395b18bab84d3
+    - name: King_Mewrthur_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 46
+        height: 25
+      spriteId: 0ddb1cb3d484add41ab6de2bf2d33438
+    - name: King_Mewrthur_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 41
+        height: 21
+      spriteId: 08632e8127e6e5449824d730e8f9013b
+    - name: King_Mewrthur_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 36
+        height: 15
+      spriteId: 7834594a480864e438194cf6f2485fbc
+    - name: King_Mewrthur_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 28
+        height: 15
+      spriteId: d557f124df2506747b3791237e300b9f
+    - name: King_Mewrthur_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 29
+        height: 15
+      spriteId: fb92ffa96ab644c4ba6f0343b420e60f
+    - name: King_Mewrthur_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 34
+        height: 15
+      spriteId: 7acedb55264c04545835d802c7fd272f
+    - name: King_Mewrthur_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 36
+        height: 15
+      spriteId: 46741a65a52c01d43b82b568f5b2bae1
+    - name: King_Mewrthur_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 35
+        height: 15
+      spriteId: bb6c93c63bf958643bcb3881cf855c9a
+    - name: King_Mewrthur_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 28
+        height: 15
+      spriteId: af0f285844dfd664fa5d3e66382dfed4
+    - name: King_Mewrthur_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 31
+        height: 15
+      spriteId: b61dd9f379029e84ca5d5ed59a75079e
+    - name: King_Mewrthur_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 23
+        height: 14
+      spriteId: da6e091c290608242a5e6a8e6258ddb3
+    - name: King_Mewrthur_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 22
+        height: 14
+      spriteId: 860fd06c80a225947ab3c01b4f939184
+    - name: King_Mewrthur_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 25
+        height: 17
+      spriteId: 4f035688e586b5a4192e602a0d945e2a
+    - name: King_Mewrthur_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 29
+        height: 18
+      spriteId: bb6b22baa005427498d1edcacbdc87a2
+    - name: King_Mewrthur_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 16
+        width: 31
+        height: 19
+      spriteId: 85f94b1ffed82f642a9ce2af7d062451
+    - name: King_Mewrthur_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 5
+        width: 26
+        height: 29
+      spriteId: d0fa83075e299a44489175c97c57f5c1
+    - name: King_Mewrthur_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 5
+        width: 28
+        height: 31
+      spriteId: a9b7fbacfc6e67042a4497ca4cc3c679
+    - name: King_Mewrthur_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 5
+        width: 23
+        height: 29
+      spriteId: 25b32a302f6d5f04695e49783b6da70f
+    - name: King_Mewrthur_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 3
+        width: 27
+        height: 35
+      spriteId: 37292eb4deaa0e44888292a811aa450f
+    - name: King_Mewrthur_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 16
+        width: 27
+        height: 21
+      spriteId: c2e0e8b8db1e4e14493feabbfeaba0a7
+    - name: King_Mewrthur_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 70
+        y: 16
+        width: 40
+        height: 14
+      spriteId: 7c599d443c68f084abb7660fde6d0119
+    - name: King_Mewrthur_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 16
+        width: 58
+        height: 15
+      spriteId: 7cc11a5561569ad458d05704d0a8fa28
+    - name: King_Mewrthur_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 16
+        width: 71
+        height: 15
+      spriteId: 6198ec17fa347524db014c982370476d
+    - name: King_Mewrthur_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 49
+        y: 16
+        width: 79
+        height: 31
+      spriteId: 339d70b8a9526e84ea03e510038b49d8
+    - name: King_Mewrthur_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 81
+        y: 16
+        width: 17
+        height: 40
+      spriteId: 0ece379d7e57fca41a1a04c846809e9f
+    - name: King_Mewrthur_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 80
+        y: 16
+        width: 14
+        height: 40
+      spriteId: 8bd1bdc5eaafba54e8a00e97991ec497
+    - name: King_Mewrthur_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 81
+        y: 16
+        width: 13
+        height: 37
+      spriteId: 3d3f80af92ea5f547a7aa6d3d99b50b4
+    - name: King_Mewrthur_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 81
+        y: 16
+        width: 13
+        height: 15
+      spriteId: 329c3ef5800997448bea7a316acfa8fa
+    - name: King_Mewrthur_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 82
+        y: 16
+        width: 12
+        height: 15
+      spriteId: 2048ae138d1bbea439b247363cf52774
+    - name: King_Mewrthur_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 80
+        y: 16
+        width: 13
+        height: 17
+      spriteId: d46c6cb965ea83d49b4c2445e15b347f
+    - name: King_Mewrthur_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 82
+        y: 16
+        width: 12
+        height: 14
+      spriteId: 8a1d0578afa387745b00fb9cf3a1fd1f
+    - name: King_Mewrthur_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 16
+        width: 12
+        height: 15
+      spriteId: 368f6fb70329f3d43a2c3345adaf43d2
+    - name: King_Mewrthur_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 16
+        width: 16
+        height: 15
+      spriteId: b712518c9bed5314082d4c4a7164a31c
+    - name: King_Mewrthur_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 81
+        y: 16
+        width: 27
+        height: 9
+      spriteId: c3c8ea0ee22c9ac4596a366df9eb19cd
+    - name: King_Mewrthur_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 83
+        y: 16
+        width: 28
+        height: 10
+      spriteId: e564cfc8f39f71a4bad1def5cbcf2193
+    - name: King_Mewrthur_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 83
+        y: 16
+        width: 28
+        height: 10
+      spriteId: 6631933ae63be2f4dbffed45c684f959
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 160, y: 80}
