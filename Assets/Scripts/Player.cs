@@ -6,11 +6,14 @@ public class Player : MonoBehaviour
 {
     private Animator animator;
 
-    
+
+
     void Start()
     {
-       animator = gameObject.GetComponent<Animator>();
-       animator.Play("Idle");
+        animator = gameObject.GetComponent<Animator>();
+        animator.Play("Idle");
+        Events.SetHealth(1);
+
     }
 
     
@@ -19,7 +22,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow)) {
             print(Events.RequestEnemyHealth());
-            Events.SetEnemyHealth(Events.RequestEnemyHealth() - 0.01f);
+            Events.SetEnemyHealth(Events.RequestEnemyHealth() - 0.05f);
             print(Events.RequestEnemyHealth());
             animator.SetTrigger("Attack");
                 

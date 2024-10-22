@@ -9,15 +9,6 @@ public class Enemy : MonoBehaviour
     private float attackDelay = 2.0f;
     private float nextAttackTime;
 
-    private void Awake()
-    {
-        Events.OnSetEnemyHealth += OnSetEnemyHealth;
-    }
-
-    private void OnSetEnemyHealth(float obj)
-    {
-        
-    }
 
     void Start()
     {
@@ -31,9 +22,9 @@ public class Enemy : MonoBehaviour
     {
 
         if (nextAttackTime < Time.time) {
-            print("ISe oled lOll");
             animator.SetTrigger("Attack");
             nextAttackTime += attackDelay ;
+            Events.SetHealth(Events.RequestHealth() - 0.1f);
         }
     }
 
