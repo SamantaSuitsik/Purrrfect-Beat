@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -22,9 +23,14 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void StartNewGame()
     {
-        
+        SceneManager.LoadScene("FightingScene1");
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     void OnEnable()
