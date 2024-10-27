@@ -29,4 +29,8 @@ public static class Events
         GameResult = gameResult;
         OnEndGame?.Invoke();
     }
+    public static event Action<bool> OnPlayerDodging; // New event for dodging state
+    public static void PlayerDodging(bool isDodging) => OnPlayerDodging?.Invoke(isDodging);
+    
+    
 }

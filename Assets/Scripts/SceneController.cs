@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -19,6 +20,11 @@ public class SceneController : MonoBehaviour
         {
             UpdateEndGameText();
         }
+    }
+
+    private void Update()
+    {
+        
     }
 
     void OnEnable()

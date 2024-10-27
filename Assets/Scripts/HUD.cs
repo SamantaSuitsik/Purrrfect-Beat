@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using UnityEngine;
 
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class HUD : MonoBehaviour
 {
     public Image HealthBar;
     public Image EnemyHealthBar;
+    private bool isPlayerDodging = false; 
 
     private void Awake()
     {
@@ -16,8 +18,14 @@ public class HUD : MonoBehaviour
         Events.OnSetHealth += SetHealth;
         Events.OnRequestEnemyHealth += RequestEnemyHealth;
         Events.OnRequestHealth += RequestHealth;
+        Events.OnPlayerDodging += PlayerDodging;
 
 
+    }
+
+    private void PlayerDodging(bool isDodging)
+    {
+        isPlayerDodging = isDodging;
     }
 
 
@@ -44,6 +52,7 @@ public class HUD : MonoBehaviour
         {
 
         }
+        
         HealthBar.fillAmount = obj;
     }
 
