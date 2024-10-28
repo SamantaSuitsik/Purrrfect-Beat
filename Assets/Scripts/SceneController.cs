@@ -33,6 +33,18 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void SelectLevel()
+    {
+        SceneManager.LoadScene("LevelSelection");
+    }
+
+    public void SelectOpponent()
+    {
+        SceneManager.LoadScene("ChooseOpponent");
+    }
+
+
+
     void OnEnable()
     {
         Events.OnEndGame += SwitchToEndGameScene;
