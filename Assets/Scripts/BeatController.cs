@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class BeatController : MonoBehaviour
 {
-    public float SongBpm;
-
-    public float SecPerBeat;
-    public float SongPosition;
-    public float SongPositionInBeats;
-
-    public float DspSongTime;
+    public static BeatController Instance;
 
     public AudioSource MusicSource;
-    public float FirstBeatOffset;
+    public float SongBpm;
+
+    public static float SecPerBeat;
+    private float DspSongTime;
+
+    void Awake()
+    {
+       
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -27,12 +37,9 @@ public class BeatController : MonoBehaviour
         MusicSource.Play();
     }
 
-
-    void Update()
+    public static float GetSongPositionInBeats()
     {
-        SongPosition = (float)(AudioSettings.dspTime - DspSongTime - FirstBeatOffset);
-        SongPositionInBeats = SongPosition / SecPerBeat;
-
-
+        return ((float)AudioSettings.dspTime - Instance.DspSongTime) / SecPerBeat;
     }
+
 }

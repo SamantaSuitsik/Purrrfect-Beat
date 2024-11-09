@@ -16,10 +16,21 @@ public class NoteObject : MonoBehaviour
     {
         if (Input.GetKeyDown(attackKey))
         {
-            if (canBePressed)
-            {
-                gameObject.SetActive(false);
-            }
+           
+                float beatDistance = Mathf.Abs(BeatController.GetSongPositionInBeats() % 1);
+
+                if (beatDistance < 0.2f) 
+                {
+                    Debug.Log("Successful hit!");
+                    gameObject.SetActive(false);
+                }
+                else
+                {
+                    Debug.Log("Missed hit");
+                }
+
+            
+           
         }
     }
 

@@ -25,6 +25,7 @@ public class BeatScroller : MonoBehaviour
         }
         else
         {
+            float beatTempo = BeatController.SecPerBeat;
             transform.position -= new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
         }
     }
