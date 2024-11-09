@@ -24,6 +24,10 @@ public class GameSound : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha3))
         {
             Group3.play();
+        } 
+        if (Input.GetKey(KeyCode.Alpha4))
+        {
+            Group4.play();
         }
     }
 }
