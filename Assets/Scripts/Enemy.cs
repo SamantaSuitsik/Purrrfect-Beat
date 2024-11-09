@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     private Animator animator;
     private float attackDelay = 2.0f;
     private float nextAttackTime;
-    private float actualAttackDelay = 0.45f;
+    private float actualAttackDelay = 0.2f;
     private float actualAttackTime = 0;
     private bool isAttacking = false;
     private bool isPlayerDodging = false;
@@ -17,6 +17,12 @@ public class Enemy : MonoBehaviour
     {
         Events.OnPlayerDodging += PlayerDodging;
     }
+
+    private void OnDestroy()
+    {
+        Events.OnPlayerDodging -= PlayerDodging;
+    }
+
 
     private void PlayerDodging(bool isDodging)
     {
@@ -42,19 +48,18 @@ public class Enemy : MonoBehaviour
             isAttacking = true;
 
         }
-        if (isAttacking && !isPlayerDodging && Time.time >= actualAttackTime)
+        if (isAttacking && Time.time >= actualAttackTime)
         {
-            //Give time to react
-            print("actual attack ");
-            Events.SetHealth(Events.RequestHealth() - 0.1f);
-
+            if (!isPlayerDodging)
+            {
+                //Give time to react
+                print("actual attack ");
+                Events.SetHealth(Events.RequestHealth() - 0.1f);
+            }
             isAttacking = false;
 
         }
+     
     }
 
-    private void attack()
-    {
-        
-    }
 }

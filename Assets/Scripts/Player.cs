@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private float health = 1.0f;
     private bool isDodging = false;
     private float dodgeTime = 1.0f;
-    private float dodgetimePlusNormalTime = 0;
+    private float dodgetimePlusNormalTime;
 
 
     void Start()

@@ -8,6 +8,7 @@ public class GameSound : MonoBehaviour
     public AudioClipGroup Group1;
     public AudioClipGroup Group2;
     public AudioClipGroup Group3;
+    public AudioClipGroup Group4;
 
 
     void Update()
@@ -16,7 +17,7 @@ public class GameSound : MonoBehaviour
         {
             Group1.play();
         }
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             Group2.play();
         }
