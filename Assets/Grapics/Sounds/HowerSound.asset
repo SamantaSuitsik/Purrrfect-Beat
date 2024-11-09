@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
+  m_Name: HowerSound
+  m_EditorClassIdentifier: 
+  VolumeMin: 1
+  VolumeMax: 1
+  PitchMin: 1
+  PitchMax: 1
+  Cooldown: 0.1
+  AudioClips:
+  - {fileID: 8300000, guid: feb3e2d19d6ee234db848a2648b9cb3a, type: 3}
+  - {fileID: 8300000, guid: 6f24cd2d7bb0866418f6ef74d402c20d, type: 3}
