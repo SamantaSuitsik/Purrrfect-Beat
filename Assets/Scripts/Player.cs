@@ -33,9 +33,9 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            print(Events.RequestEnemyHealth());
+// print(Events.RequestEnemyHealth());
             Events.SetEnemyHealth(Events.RequestEnemyHealth() - 0.05f);
-            print(Events.RequestEnemyHealth());
+// print(Events.RequestEnemyHealth());
             animator.SetTrigger("Attack");
 
             if (Events.RequestEnemyHealth() <= 0)

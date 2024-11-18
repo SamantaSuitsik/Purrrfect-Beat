@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
             if (!isPlayerDodging)
             {
                 //Give time to react
-                print("actual attack ");
+                //print("actual attack ");
                 Events.SetHealth(Events.RequestHealth() - 0.1f);
             }
             isAttacking = false;
