@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1305605571007055654}
   - component: {fileID: 704209802079907869}
   - component: {fileID: -554454036581144598}
-  - component: {fileID: 4590004824205989529}
   - component: {fileID: -4974127234362866849}
   m_Layer: 0
   m_Name: Beat
@@ -99,20 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161b62f7bbe63cbf6a0d56512184cfa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4590004824205989529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5325101289668335784}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7005709bf7efb89b19149cf1cc372786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePressed: 0
-  attackKey: 275
 --- !u!58 &-4974127234362866849
 CircleCollider2D:
   m_ObjectHideFlags: 0

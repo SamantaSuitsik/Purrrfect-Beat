@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8687052902156229006, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
       propertyPath: SongBpm
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
