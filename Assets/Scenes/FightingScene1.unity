@@ -904,17 +904,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 102611055861807756, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 74297b8e4aefba14996bcacba4623953, type: 2}
+    - target: {fileID: 102611055861807756, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7911243759280710796, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8644649125198599753, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.88
+      value: -5.86
       objectReference: {fileID: 0}
     - target: {fileID: 8644649125198599753, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.42
+      value: -4.44
       objectReference: {fileID: 0}
     - target: {fileID: 8644649125198599753, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
       propertyPath: m_LocalPosition.z

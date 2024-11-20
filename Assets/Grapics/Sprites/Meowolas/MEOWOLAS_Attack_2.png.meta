@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 4
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,9 +93,195 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 385
+        width: 14
+        height: 32
+      alignment: 9
+      pivot: {x: 0.376523, y: 0.17587376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 16}
+        - {x: -7, y: 14}
+        - {x: -7, y: -16}
+        - {x: 7, y: -16}
+        - {x: 7, y: 16}
+      physicsShape: []
+      tessellationDetail: 0.56
+      bones: []
+      spriteID: 2abd39e3c6d0a494282b070aeefa106d
+      internalID: 14598338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0.30792463, y: 0.15648124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c6705c89fe48a42845bc05644eadaf
+      internalID: 1440610220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 271
+        width: 21
+        height: 25
+      alignment: 9
+      pivot: {x: 0.417187, y: 0.14537841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9fd796ba2f50a44ab2be8317752af3
+      internalID: -442687713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 212
+        width: 22
+        height: 29
+      alignment: 9
+      pivot: {x: 0.40832806, y: 0.1423424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ab51b1e36365a449b2d63ca9db8823
+      internalID: -1350447447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 152
+        width: 25
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.2000159}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09202d000f18d844da5748be0c4a98ce
+      internalID: 1928978281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 97
+        width: 22
+        height: 29
+      alignment: 9
+      pivot: {x: 0.49375075, y: 0.12071018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34376e3823fd84f4690ff41876682a21
+      internalID: 73255420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 36
+        width: 35
+        height: 33
+      alignment: 9
+      pivot: {x: 0.25251278, y: 0.19168276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6d61978ffa0fc498265b46fa4ac0f7
+      internalID: -2127523808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWOLAS_Attack_2_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 46
+        height: 15
+      alignment: 9
+      pivot: {x: 0.10844413, y: 0.05085776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb5cbeb062200a489339d252c12c00b
+      internalID: -1456279143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +292,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MEOWOLAS_Attack_2_0: 14598338
+      MEOWOLAS_Attack_2_1: 1440610220
+      MEOWOLAS_Attack_2_10: 1374517988
+      MEOWOLAS_Attack_2_2: -442687713
+      MEOWOLAS_Attack_2_3: -1350447447
+      MEOWOLAS_Attack_2_4: 1928978281
+      MEOWOLAS_Attack_2_5: -1100461977
+      MEOWOLAS_Attack_2_6: 73255420
+      MEOWOLAS_Attack_2_7: -2127523808
+      MEOWOLAS_Attack_2_8: 1197862386
+      MEOWOLAS_Attack_2_9: -1456279143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
