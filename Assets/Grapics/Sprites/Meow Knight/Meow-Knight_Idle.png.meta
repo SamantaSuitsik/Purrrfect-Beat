@@ -113,12 +113,12 @@ TextureImporter:
       name: Meow-Knight_Idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 126
-        width: 16
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5470683, y: 0.21489945}
+        x: 1
+        y: 130
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Meow-Knight_Idle_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 100
-        width: 16
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5336204, y: 0.22565803}
+        x: 2
+        y: 104
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Meow-Knight_Idle_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 74
-        width: 16
-        height: 20
-      alignment: 9
-      pivot: {x: 0.54034436, y: 0.20414162}
+        x: 2
+        y: 78
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: Meow-Knight_Idle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 49
-        width: 16
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5336204, y: 0.16648617}
+        x: 2
+        y: 52
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Meow-Knight_Idle_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 22
-        width: 16
-        height: 20
-      alignment: 9
-      pivot: {x: 0.50000036, y: 0.14410362}
+        x: 2
+        y: 26
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: Meow-Knight_Idle_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 16
-        height: 17
-      alignment: 9
-      pivot: {x: 0.48965472, y: -0.025809826}
+        width: 13
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -123,8 +123,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: King_Mewrthur_Frame_0
     originalName: 
-    pivot: {x: 0.16666651, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 472}
   - name: King_Mewrthur_Frame_1
     originalName: 
-    pivot: {x: 0.30769238, y: -1.0666667}
+    pivot: {x: 0.59553057, y: 0.002444458}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -163,8 +163,8 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 194}
   - name: King_Mewrthur_Frame_2
     originalName: 
-    pivot: {x: 0.28571436, y: -1}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,7 +183,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 27}
   - name: King_Mewrthur_Frame_3
     originalName: 
-    pivot: {x: 0.28571436, y: -1}
+    pivot: {x: 0.62110573, y: 0.009422779}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -203,7 +203,7 @@ ScriptedImporter:
     uvTransform: {x: 128, y: 122}
   - name: King_Mewrthur_Frame_4
     originalName: 
-    pivot: {x: 0.23076938, y: -1.0666667}
+    pivot: {x: 0.5818399, y: -0.05880127}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -223,8 +223,8 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 263}
   - name: King_Mewrthur_Frame_5
     originalName: 
-    pivot: {x: 0.16666651, y: -1.1428572}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -243,8 +243,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 362}
   - name: King_Mewrthur_Frame_6
     originalName: 
-    pivot: {x: 0.18181801, y: -1.2142857}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -263,8 +263,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 450}
   - name: King_Mewrthur_Frame_7
     originalName: 
-    pivot: {x: 0.16666651, y: -1.2857143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -283,7 +283,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 384}
   - name: King_Mewrthur_Frame_8
     originalName: 
-    pivot: {x: 0.16666651, y: -1}
+    pivot: {x: 0.5007636, y: 0.03570175}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -303,8 +303,8 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 491}
   - name: King_Mewrthur_Frame_9
     originalName: 
-    pivot: {x: 0.18181801, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -323,8 +323,8 @@ ScriptedImporter:
     uvTransform: {x: 72, y: 133}
   - name: King_Mewrthur_Frame_10
     originalName: 
-    pivot: {x: 0.18181801, y: -1.2142857}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -343,8 +343,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 472}
   - name: King_Mewrthur_Frame_11
     originalName: 
-    pivot: {x: 0.16666651, y: -1.2857143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -363,7 +363,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 406}
   - name: King_Mewrthur_Frame_12
     originalName: 
-    pivot: {x: 0.16666651, y: -1}
+    pivot: {x: 0.4784902, y: -0.014411926}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -383,7 +383,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 424}
   - name: King_Mewrthur_Frame_13
     originalName: 
-    pivot: {x: 0.099999905, y: -1.0666667}
+    pivot: {x: 0.4708206, y: 0.017264811}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -403,8 +403,8 @@ ScriptedImporter:
     uvTransform: {x: 73, y: 310}
   - name: King_Mewrthur_Frame_14
     originalName: 
-    pivot: {x: 0.41666666, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -423,7 +423,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 270}
   - name: King_Mewrthur_Frame_15
     originalName: 
-    pivot: {x: 0.41666666, y: -1}
+    pivot: {x: 0.52803296, y: 0.03570175}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -443,7 +443,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 448}
   - name: King_Mewrthur_Frame_16
     originalName: 
-    pivot: {x: 0.46666655, y: -1.0666667}
+    pivot: {x: 0.506601, y: 0.031539407}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -503,7 +503,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 390}
   - name: King_Mewrthur_Frame_19
     originalName: 
-    pivot: {x: 0.35714287, y: -1}
+    pivot: {x: 0.5098735, y: 0.05240631}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -523,7 +523,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 418}
   - name: King_Mewrthur_Frame_20
     originalName: 
-    pivot: {x: 0.30769238, y: -1.2857143}
+    pivot: {x: 0.5490535, y: 0.05901446}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -543,7 +543,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 309}
   - name: King_Mewrthur_Frame_21
     originalName: 
-    pivot: {x: 0.25000015, y: -0.88888896}
+    pivot: {x: 0.51727676, y: 0.016886393}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -563,7 +563,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 372}
   - name: King_Mewrthur_Frame_22
     originalName: 
-    pivot: {x: 0.25000015, y: -0.88888896}
+    pivot: {x: 0.5395495, y: 0.046583388}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -583,7 +583,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 398}
   - name: King_Mewrthur_Frame_23
     originalName: 
-    pivot: {x: 0.35714287, y: -1}
+    pivot: {x: 0.5289634, y: 0.018997192}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -603,8 +603,8 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 442}
   - name: King_Mewrthur_Frame_24
     originalName: 
-    pivot: {x: 0.35714287, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -623,7 +623,7 @@ ScriptedImporter:
     uvTransform: {x: 135, y: 53}
   - name: King_Mewrthur_Frame_25
     originalName: 
-    pivot: {x: 0.35714287, y: -1.0666667}
+    pivot: {x: 0.5870939, y: 0.0064356485}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -663,7 +663,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 293}
   - name: King_Mewrthur_Frame_27
     originalName: 
-    pivot: {x: 1.0666666, y: -1.1428572}
+    pivot: {x: 0.4608368, y: 0.0026179722}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -683,7 +683,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 171}
   - name: King_Mewrthur_Frame_28
     originalName: 
-    pivot: {x: 1.025, y: -0.8421053}
+    pivot: {x: 0.86471903, y: 0.02256534}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -703,7 +703,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 283}
   - name: King_Mewrthur_Frame_29
     originalName: 
-    pivot: {x: 1, y: -0.88888896}
+    pivot: {x: 0.91405696, y: -0.022260878}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -723,7 +723,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 133}
   - name: King_Mewrthur_Frame_30
     originalName: 
-    pivot: {x: 1.0000001, y: -1}
+    pivot: {x: 0.930164, y: -0.02504301}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -743,7 +743,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 109}
   - name: King_Mewrthur_Frame_31
     originalName: 
-    pivot: {x: 1, y: -1.0666667}
+    pivot: {x: 0.65253985, y: 0.03808187}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -763,7 +763,7 @@ ScriptedImporter:
     uvTransform: {x: 128, y: 217}
   - name: King_Mewrthur_Frame_32
     originalName: 
-    pivot: {x: 1, y: -1.0666667}
+    pivot: {x: 0.8205597, y: -0.0534256}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -783,7 +783,7 @@ ScriptedImporter:
     uvTransform: {x: 57, y: 76}
   - name: King_Mewrthur_Frame_33
     originalName: 
-    pivot: {x: 0.99999994, y: -1.0666667}
+    pivot: {x: 0.81894094, y: 0.07371928}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -803,7 +803,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 171}
   - name: King_Mewrthur_Frame_34
     originalName: 
-    pivot: {x: 0.107142925, y: -1.0666667}
+    pivot: {x: 0.30760193, y: 0.002444458}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -823,7 +823,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 240}
   - name: King_Mewrthur_Frame_35
     originalName: 
-    pivot: {x: 0.17857143, y: -1.0666667}
+    pivot: {x: 0.29063252, y: 0.05529785}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -843,7 +843,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 263}
   - name: King_Mewrthur_Frame_36
     originalName: 
-    pivot: {x: 0.16129032, y: -0.88888896}
+    pivot: {x: 0.27400625, y: 0.000000105963814}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -863,7 +863,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 27}
   - name: King_Mewrthur_Frame_37
     originalName: 
-    pivot: {x: 0.13513513, y: -0.64000005}
+    pivot: {x: 0.24343243, y: 0.0011206055}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -883,7 +883,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 182}
   - name: King_Mewrthur_Frame_38
     originalName: 
-    pivot: {x: 0.08888891, y: -0.64000005}
+    pivot: {x: 0.19724888, y: -0.016029052}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -903,7 +903,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 76}
   - name: King_Mewrthur_Frame_39
     originalName: 
-    pivot: {x: 0.06521743, y: -0.64000005}
+    pivot: {x: 0.17769794, y: 0.032055512}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -923,7 +923,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 43}
   - name: King_Mewrthur_Frame_40
     originalName: 
-    pivot: {x: 0.04878044, y: -0.7619048}
+    pivot: {x: 0.14651237, y: 0.058576312}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -943,7 +943,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 254}
   - name: King_Mewrthur_Frame_41
     originalName: 
-    pivot: {x: 0.08333339, y: -1.0666667}
+    pivot: {x: 0.2551278, y: -0.026713561}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -963,7 +963,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 53}
   - name: King_Mewrthur_Frame_42
     originalName: 
-    pivot: {x: 0.107142925, y: -1.0666667}
+    pivot: {x: 0.29051426, y: -0.020768229}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -983,7 +983,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 286}
   - name: King_Mewrthur_Frame_43
     originalName: 
-    pivot: {x: 0.103448346, y: -1.0666667}
+    pivot: {x: 0.26934525, y: 0.0024434407}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1003,7 +1003,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 217}
   - name: King_Mewrthur_Frame_44
     originalName: 
-    pivot: {x: 0.088235356, y: -1.0666667}
+    pivot: {x: 0.25331855, y: 0.002444458}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1023,7 +1023,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 148}
   - name: King_Mewrthur_Frame_45
     originalName: 
-    pivot: {x: 0.08333339, y: -1.0666667}
+    pivot: {x: 0.20576985, y: -0.024845887}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1043,7 +1043,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 76}
   - name: King_Mewrthur_Frame_46
     originalName: 
-    pivot: {x: 0.08571435, y: -1.0666667}
+    pivot: {x: 0.211649, y: 0.10871938}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1063,7 +1063,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 99}
   - name: King_Mewrthur_Frame_47
     originalName: 
-    pivot: {x: 0.07142851, y: -1.0666667}
+    pivot: {x: 0.24461338, y: 0.017264811}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1083,7 +1083,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 309}
   - name: King_Mewrthur_Frame_48
     originalName: 
-    pivot: {x: 0.12903228, y: -1.0666667}
+    pivot: {x: 0.29284742, y: 0.020263672}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1103,7 +1103,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 194}
   - name: King_Mewrthur_Frame_49
     originalName: 
-    pivot: {x: 0.13043486, y: -1.1428572}
+    pivot: {x: 0.35367054, y: -0.001876831}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1123,7 +1123,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 332}
   - name: King_Mewrthur_Frame_50
     originalName: 
-    pivot: {x: 0.13636373, y: -1.1428572}
+    pivot: {x: 0.31859797, y: 0.040802002}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1143,7 +1143,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 240}
   - name: King_Mewrthur_Frame_51
     originalName: 
-    pivot: {x: 0.12000008, y: -0.94117653}
+    pivot: {x: 0.33971953, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1163,7 +1163,7 @@ ScriptedImporter:
     uvTransform: {x: 58, y: 43}
   - name: King_Mewrthur_Frame_52
     originalName: 
-    pivot: {x: 0.13793106, y: -0.88888896}
+    pivot: {x: 0.2899196, y: 0.0015568204}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1183,7 +1183,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 122}
   - name: King_Mewrthur_Frame_53
     originalName: 
-    pivot: {x: 0.16129032, y: -0.8421053}
+    pivot: {x: 0.30786157, y: 0.0019290322}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1203,7 +1203,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 432}
   - name: King_Mewrthur_Frame_54
     originalName: 
-    pivot: {x: 0.15384619, y: -0.1724138}
+    pivot: {x: 0.4928994, y: -0.0066065295}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1223,7 +1223,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 310}
   - name: King_Mewrthur_Frame_55
     originalName: 
-    pivot: {x: 0.17857143, y: -0.16129032}
+    pivot: {x: 0.43616268, y: -0.006180794}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1243,7 +1243,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 215}
   - name: King_Mewrthur_Frame_56
     originalName: 
-    pivot: {x: 0.086956434, y: -0.1724138}
+    pivot: {x: 0.4355792, y: 0.021132898}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1263,8 +1263,8 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 395}
   - name: King_Mewrthur_Frame_57
     originalName: 
-    pivot: {x: 0.14814818, y: -0.085714296}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1283,7 +1283,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 182}
   - name: King_Mewrthur_Frame_58
     originalName: 
-    pivot: {x: 0.14814818, y: -0.7619048}
+    pivot: {x: 0.52431726, y: -0.010981969}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1303,7 +1303,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 459}
   - name: King_Mewrthur_Frame_59
     originalName: 
-    pivot: {x: 0.25, y: -1.1428572}
+    pivot: {x: 0.5039133, y: -0.016470773}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1323,8 +1323,8 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 488}
   - name: King_Mewrthur_Frame_60
     originalName: 
-    pivot: {x: 0.32758623, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1343,8 +1343,8 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 4}
   - name: King_Mewrthur_Frame_61
     originalName: 
-    pivot: {x: 0.36619717, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1363,8 +1363,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 159}
   - name: King_Mewrthur_Frame_62
     originalName: 
-    pivot: {x: 0.39240506, y: -0.516129}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1383,7 +1383,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: King_Mewrthur_Frame_63
     originalName: 
-    pivot: {x: -0.058823757, y: -0.4}
+    pivot: {x: 0.49488854, y: -0.00065689086}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1403,7 +1403,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 347}
   - name: King_Mewrthur_Frame_64
     originalName: 
-    pivot: {x: 0, y: -0.4}
+    pivot: {x: 0.52974266, y: 0.006474304}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1423,8 +1423,8 @@ ScriptedImporter:
     uvTransform: {x: 64, y: 347}
   - name: King_Mewrthur_Frame_65
     originalName: 
-    pivot: {x: -0.07692337, y: -0.4324324}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1443,7 +1443,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 225}
   - name: King_Mewrthur_Frame_66
     originalName: 
-    pivot: {x: -0.07692337, y: -1.0666667}
+    pivot: {x: 0.55939424, y: 0.017264811}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1463,8 +1463,8 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 286}
   - name: King_Mewrthur_Frame_67
     originalName: 
-    pivot: {x: -0.16666651, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1483,7 +1483,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 316}
   - name: King_Mewrthur_Frame_68
     originalName: 
-    pivot: {x: 0, y: -0.94117653}
+    pivot: {x: 0.4728769, y: 0.04932359}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1503,7 +1503,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 466}
   - name: King_Mewrthur_Frame_69
     originalName: 
-    pivot: {x: -0.16666651, y: -1.1428572}
+    pivot: {x: 0.5040218, y: -0.002683367}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1523,8 +1523,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 428}
   - name: King_Mewrthur_Frame_70
     originalName: 
-    pivot: {x: 0.16666651, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1543,7 +1543,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 339}
   - name: King_Mewrthur_Frame_71
     originalName: 
-    pivot: {x: 0.18750012, y: -1.0666667}
+    pivot: {x: 0.5215969, y: 0.038080852}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1563,7 +1563,7 @@ ScriptedImporter:
     uvTransform: {x: 133, y: 148}
   - name: King_Mewrthur_Frame_72
     originalName: 
-    pivot: {x: -0.03703718, y: -1.7777779}
+    pivot: {x: 0.5228887, y: -0.034613714}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1583,7 +1583,7 @@ ScriptedImporter:
     uvTransform: {x: 122, y: 332}
   - name: King_Mewrthur_Frame_73
     originalName: 
-    pivot: {x: -0.107142925, y: -1.6}
+    pivot: {x: 0.50409806, y: 0.054422}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1603,7 +1603,7 @@ ScriptedImporter:
     uvTransform: {x: 91, y: 354}
   - name: King_Mewrthur_Frame_74
     originalName: 
-    pivot: {x: -0.107142925, y: -1.6}
+    pivot: {x: 0.49423245, y: 0.003665161}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
