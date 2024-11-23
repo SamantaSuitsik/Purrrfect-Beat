@@ -2,39 +2,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ButtonHoverSound : MonoBehaviour
+public class ButtonHoverSound : MonoBehaviour, IPointerEnterHandler
 {
+    public AudioClip meowSound;
+    private AudioSource audioSource;
+
     void Start()
     {
-        // Get all Button components in children
-        Button[] buttons = GetComponentsInChildren<Button>();
-        foreach (Button button in buttons)
+        
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
         {
-            // Add EventTrigger component to the button if not present
-            EventTrigger trigger = button.gameObject.GetComponent<EventTrigger>();
-            if (trigger == null)
-            {
-                trigger = button.gameObject.AddComponent<EventTrigger>();
-            }
-
-            // Set up the hover (pointer enter) event
-            EventTrigger.Entry entry = new EventTrigger.Entry();
-            entry.eventID = EventTriggerType.PointerEnter;
-            entry.callback.AddListener((data) => { PlayHoverSound(button); });
-            trigger.triggers.Add(entry);
+            audioSource = gameObject.AddComponent<AudioSource>();
         }
     }
 
-    void PlayHoverSound(Button button)
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        // Retrieve the AudioSource and AudioSound components attached to the button
-        AudioSource audioSource = button.GetComponent<AudioSource>();
-   
-
-        // Play the button's unique hover sound if available
-        if (audioSource != null)
+        if (meowSound != null)
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(meowSound);
         }
     }
 }

@@ -19,7 +19,6 @@ public class BeatController : MonoBehaviour
     public Transform HitPoint;
 
     public GameObject BeatPrefab;
-    public float TrackLengthInSec;
 
     public float BeatSpawnInterval;
     private float nextBeatTime;
@@ -56,6 +55,12 @@ public class BeatController : MonoBehaviour
 
     private void Update()
     {
+        if (!MusicSource.isPlaying)
+        {
+            Debug.Log("Music has stopped. No more beats will be spawned.");
+            return;
+        }
+
         if ((float)AudioSettings.dspTime >= nextBeatTime) // Check if it's time to spawn a new beat
         {
             SpawnBeat();
