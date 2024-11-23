@@ -9,6 +9,11 @@ public class Player : MonoBehaviour
     private bool isDodging = false;
     private float dodgeTime = 1.0f;
     private float dodgetimePlusNormalTime;
+    
+    [Header("Dodge Cooldown Settings")]
+    public float dodgeCooldown = 5.0f;
+    private float nextDodgeAvailableTime = 0f;
+    private bool isCooldown = false;
 
 
     void Start()
@@ -30,27 +35,22 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        handleAttack();
+        handleDodge();
+        HandleCooldown();
+    }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-// print(Events.RequestEnemyHealth());
-            Events.SetEnemyHealth(Events.RequestEnemyHealth() - 0.05f);
-// print(Events.RequestEnemyHealth());
-            animator.SetTrigger("Attack");
-
-            if (Events.RequestEnemyHealth() <= 0)
-            {
-                Events.EndGame(true);
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+    private void handleDodge()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && !isDodging && !isCooldown)
         {
             animator.SetTrigger("Dodge");
             isDodging = true;
             dodgetimePlusNormalTime = dodgeTime + Time.time;
             
             Events.PlayerDodging(true);
+            isCooldown = true;
+            nextDodgeAvailableTime = Time.time + dodgeCooldown;
         }
 
         if (isDodging && dodgetimePlusNormalTime < Time.time)
@@ -58,21 +58,28 @@ public class Player : MonoBehaviour
             isDodging = false;
             Events.PlayerDodging(false);
         }
+    }
 
-        
-
+    void handleAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            animator.SetTrigger("Attack");
+            Events.TriggerPlayerAttack();
+        }
+    }
+    
+    private void HandleCooldown()
+    {
+        if (isCooldown && Time.time >= nextDodgeAvailableTime)
+        {
+            isCooldown = false;
+            Debug.Log("Dodge is ready!");
+        }
     }
 
     void UpdateHealth(float value)
     {
-        // if (isDodging && dodgetimePlusNormalTime >= Time.time)
-        // {
-        //     print("dodged a hit health:" + health);
-        //     // change health back (so did not get hit)
-        //     return;
-        // }
-        
-        // Can get hit
         health = value;
             
         if (health <= 0)

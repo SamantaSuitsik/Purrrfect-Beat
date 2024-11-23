@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
-  m_Name: Winning
+  m_Name: FailedAttack
   m_EditorClassIdentifier: 
-  VolumeMin: 1
-  VolumeMax: 1
-  PitchMin: 1
-  PitchMax: 1
-  Cooldown: 0.1
-  Clips: []
+  VolumeMin: 0.347
+  VolumeMax: 0.779
+  PitchMin: 1.071
+  PitchMax: 1.794
+  Cooldown: 0.5
+  Clips:
+  - {fileID: 8300000, guid: 58beb408470101742ab9cd90bdc37e99, type: 3}

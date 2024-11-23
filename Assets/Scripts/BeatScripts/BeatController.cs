@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BeatController : MonoBehaviour
 {
@@ -108,16 +110,19 @@ public class BeatController : MonoBehaviour
             if (hitDistance < 0.2f)
             {
                 Debug.Log("Ultra hit!");
+                Events.BeatHit(true);
                 HitPoint.GetComponent<EndPointController>().OnHit();
             }
             else if (hitDistance < 1f)
             {
                 Debug.Log("Successful hit!");
+                Events.BeatHit(true);
                 HitPoint.GetComponent<EndPointController>().OnHit();
             }
             else
             {
                 Debug.Log("Missed hit!");
+                Events.BeatHit(false);
                 HitPoint.GetComponent<EndPointController>().OnMiss();
             }
 

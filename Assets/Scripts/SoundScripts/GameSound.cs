@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,27 +8,37 @@ public class GameSound : MonoBehaviour
 
     public AudioClipGroup Group1;
     public AudioClipGroup Group2;
-    public AudioClipGroup Group3;
+    public AudioClipGroup failedAttack;
     public AudioClipGroup Group4;
 
+    private void Awake()
+    {
+        Events.OnBeatHit += OnBeatHit;
+    }
+
+    private void OnBeatHit(bool isHitOnBeat)
+    {
+        if (!isHitOnBeat)
+        {
+            failedAttack.Play();
+            return;
+        }
+        
+        // Play successful hit sound
+        Group1.Play();
+    }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            Group1.play();
-        }
+        // TODO: kasuta evente häälte jaoks, mitte hardcodeimist
+        
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            Group2.play();
+            Group2.Play();
         }
-        if (Input.GetKey(KeyCode.Alpha3))
-        {
-            Group3.play();
-        } 
         if (Input.GetKey(KeyCode.Alpha4))
         {
-            Group4.play();
+            Group4.Play();
         }
     }
 }

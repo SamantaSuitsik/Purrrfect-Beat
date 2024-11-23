@@ -11,10 +11,7 @@ public static class Events
 
     public static event Func<float> OnRequestHealth;
     public static float RequestHealth() => OnRequestHealth?.Invoke() ?? 0;
-
-
-
-
+    
     public static event Action<float> OnSetEnemyHealth;
     public static void SetEnemyHealth(float value) => OnSetEnemyHealth?.Invoke(value);
 
@@ -31,6 +28,19 @@ public static class Events
     }
     public static event Action<bool> OnPlayerDodging; // New event for dodging state
     public static void PlayerDodging(bool isDodging) => OnPlayerDodging?.Invoke(isDodging);
-    
-    
+
+    public static Action OnPlayerAttack;
+
+    public static void TriggerPlayerAttack()
+    {
+        OnPlayerAttack?.Invoke();
+    }
+
+    public static event Action<bool> OnBeatHit;
+
+    public static void BeatHit(bool isHitOnBeat)
+    {
+        OnBeatHit?.Invoke(isHitOnBeat);
+    }
+
 }

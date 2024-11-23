@@ -15,27 +15,37 @@ public class AudioClipGroup : ScriptableObject
     public float PitchMax = 1f;
 
     public float Cooldown = 0.1f;
-    private float NextPlayTime;
+    private float timestamp;
+    public List<AudioClip> Clips;
+
 
     private void OnEnable()
     {
-        NextPlayTime = 0;
+        timestamp = 0;
     }
-    public List<AudioClip> AudioClips;
-    public void play()
+    
+    public void Play()
     {
-        if (Time.time < NextPlayTime) return;
-        NextPlayTime = Time.time + Cooldown;
+        if (AudioSourcePool.Instance == null)
+            return;
+        
+        Play(AudioSourcePool.Instance.GetSource());
+    }
 
+    public void Play(AudioSource source)
+    {
+        if (timestamp > Time.time)
+            return;
+        if (Clips.Count <= 0)
+            return;
 
-        AudioSource source = AudioSourcePool.Instance.GetSource();
-
+        Debug.Log("clips: " + Clips.Count);
+        timestamp = Time.time + Cooldown;
         source.volume = Random.Range(VolumeMin, VolumeMax);
         source.pitch = Random.Range(PitchMin, PitchMax);
-        
-        source.clip = AudioClips[0];
-        source.Play();
+        source.clip = Clips[Random.Range(0, Clips.Count)];
 
+        source.Play();
     }
 
 }

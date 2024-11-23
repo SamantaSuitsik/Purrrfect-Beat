@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
+    // todo: Seda ei kasutata kusagil vist? Kustutada ara
     public bool canBePressed;
     public KeyCode attackKey;
     void Start()
