@@ -20,17 +20,12 @@ public class MusicTimer : MonoBehaviour
             musicDuration = musicSource.clip.length;
         }
 
-        Events.OnMusicEnd += OnMusicEndHandler;
     }
 
-    void OnDestroy()
-    {
-        Events.OnMusicEnd -= OnMusicEndHandler;
-    }
 
     private void OnMusicEndHandler()
     {
-        Events.CheckHealthOnMusicEnd();
+        Events.TriggerMusicEnd();
     }
     
 

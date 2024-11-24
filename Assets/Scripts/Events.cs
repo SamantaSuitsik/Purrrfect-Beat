@@ -46,20 +46,10 @@ public static class Events
     public static event Action OnMusicEnd; // Music end event
     public static void TriggerMusicEnd() => OnMusicEnd?.Invoke();
 
-    public static void CheckHealthOnMusicEnd()
-    {
-        if (RequestEnemyHealth() > RequestHealth()) 
-        {
-            EndGame(false); 
-        }
-        else if (RequestEnemyHealth() < RequestHealth()) 
-        {
-            EndGame(true);
-        }
-        else
-        {
-            EndGame(false); 
-        }
-    }
+
+    public static event Action<float> OnSetDamagepower;
+    public static void SetDamagePower(float value) => OnSetDamagepower?.Invoke(value);
+
+
 
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -32,16 +33,29 @@ public class Enemy : MonoBehaviour
     
     private bool isPlayerDodging;
 
+    private float damagePower;
     private void Awake()
     {
         Events.OnPlayerDodging += PlayerDodging;
         Events.OnBeatHit += OnBeatHit;
+        Events.OnMusicEnd += CheckHealthOnMusicEnd;
+        Events.OnSetDamagepower += SetDamagepower;
+        
     }
+
+
 
     private void OnDestroy()
     {
         Events.OnPlayerDodging -= PlayerDodging;
         Events.OnBeatHit -= OnBeatHit;
+        Events.OnMusicEnd -= CheckHealthOnMusicEnd;
+        Events.OnSetDamagepower -= SetDamagepower;
+    }
+
+    private void SetDamagepower(float obj)
+    {
+        damagePower = obj;
     }
 
     private void OnBeatHit(bool isHitOnBeat)
@@ -53,7 +67,7 @@ public class Enemy : MonoBehaviour
         }
         
         if (isHitOnBeat)
-            TakeDamage(0.01f);
+            TakeDamage(damagePower);
     }
     
     private IEnumerator PerformBeatDodge()
@@ -166,22 +180,41 @@ public class Enemy : MonoBehaviour
         }
 
         health -= damage;
+        animator.SetTrigger("GotDamage");
         Events.SetEnemyHealth(health);
 
         if (health <= 0)
         {
-            Events.EndGame(true); // Assuming this ends the game when enemy dies
+            animator.SetTrigger("Dead");
+            DelayEndGame();
+            Events.EndGame(true);
+
         }
     }
+
+
+    private IEnumerator DelayEndGame()
+    {
+        yield return new WaitForSeconds(1.0f);  // Wait for 1 second before ending the game
+    }
+
     private void CheckHealthOnMusicEnd()
     {
-        if (health > Events.RequestHealth())
+        if (Events.RequestEnemyHealth() == Events.RequestHealth())
         {
+
             Events.EndGame(false);
         }
-        else if (health < Events.RequestHealth())
+        
+        if (Events.RequestEnemyHealth() < Events.RequestHealth())
         {
+            
+
+            animator.SetTrigger("Dead");
+
+            DelayEndGame(); 
             Events.EndGame(true);
         }
     }
+
 }

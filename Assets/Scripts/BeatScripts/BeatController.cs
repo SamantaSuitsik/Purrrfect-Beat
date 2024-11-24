@@ -23,7 +23,7 @@ public class BeatController : MonoBehaviour
     public float BeatSpawnInterval;
     private float nextBeatTime;
 
-    private float[] spawnDelayList = { 2f, 3f, 4f, 6f, 9f };
+    private float[] spawnDelayList = { 2f, 4f, 6f, 9f };
 
     // List to track active beats
     private List<BeatScroller> activeBeats = new List<BeatScroller>();
@@ -115,14 +115,21 @@ public class BeatController : MonoBehaviour
             if (hitDistance < 0.2f)
             {
                 Debug.Log("Ultra hit!");
+                Events.SetDamagePower(0.02f);
+                Events.BeatHit(true);
+                HitPoint.GetComponent<EndPointController>().OnUltraHit();
+            }
+            else if (hitDistance < 0.7f)
+            {
+                Debug.Log("good hit!");
+                Events.SetDamagePower(0.015f);
                 Events.BeatHit(true);
                 HitPoint.GetComponent<EndPointController>().OnHit();
             }
-            else if (hitDistance < 1f)
-            {
-                Debug.Log("Successful hit!");
+            else if (hitDistance < 1f) {
+                Events.SetDamagePower(0.01f);
                 Events.BeatHit(true);
-                HitPoint.GetComponent<EndPointController>().OnHit();
+                HitPoint.GetComponent<EndPointController>().OnBadHit();
             }
             else
             {

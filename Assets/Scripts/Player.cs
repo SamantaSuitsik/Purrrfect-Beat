@@ -23,13 +23,15 @@ public class Player : MonoBehaviour
         Events.SetHealth(health);
 
         Events.OnSetHealth += UpdateHealth;
-        
+        Events.OnMusicEnd += CheckHealthOnMusicEnd;
+
 
     }
 
     void OnDestroy()
     {
         Events.OnSetHealth -= UpdateHealth;
+        Events.OnMusicEnd -= CheckHealthOnMusicEnd;
     }
 
 
@@ -80,11 +82,35 @@ public class Player : MonoBehaviour
 
     void UpdateHealth(float value)
     {
+        if (health > value)
+        {
+            animator.SetTrigger("GotDamage");
+        }
         health = value;
             
         if (health <= 0)
         {
+            animator.SetTrigger("Dead");
+
+            DelayEndGame();
             Events.EndGame(false);
         }
+    }
+
+
+    private void CheckHealthOnMusicEnd()
+    {
+        if (Events.RequestEnemyHealth() > Events.RequestHealth())
+        {
+            animator.SetTrigger("Dead");
+
+            DelayEndGame();
+            Events.EndGame(false);
+        }
+    }
+    private IEnumerator DelayEndGame()
+    {
+        yield return new WaitForSeconds(1.0f);  // Wait for 1 second before ending the game
+        
     }
 }

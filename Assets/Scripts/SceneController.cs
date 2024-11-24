@@ -67,12 +67,12 @@ public class SceneController : MonoBehaviour
         {
             if (Events.GameResult)
             {
-                EndGameText.text = "Level completed";
+                EndGameText.text = "Great! You won!";
                 EndGameMusicManager.Instance.PlayWinMusic();
             }
             else
             {
-                EndGameText.text = "Game over";
+                EndGameText.text = "You lose!";
                 EndGameMusicManager.Instance.PlayLoseMusic();
             }
         }
