@@ -173,4 +173,15 @@ public class Enemy : MonoBehaviour
             Events.EndGame(true); // Assuming this ends the game when enemy dies
         }
     }
+    private void CheckHealthOnMusicEnd()
+    {
+        if (health > Events.RequestHealth())
+        {
+            Events.EndGame(false);
+        }
+        else if (health < Events.RequestHealth())
+        {
+            Events.EndGame(true);
+        }
+    }
 }

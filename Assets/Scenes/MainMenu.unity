@@ -887,6 +887,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5e73f0af2875d4c9381972e1843b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenesWithMusic:
+  - MainMenu
+  - LevelSelection
+  - ChooseOpponent
 --- !u!82 &959933135
 AudioSource:
   m_ObjectHideFlags: 0
@@ -899,7 +903,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c16a8c9c04f8c6a4bab4322e240c8cf4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -10,6 +10,8 @@ public class MusicTimer : MonoBehaviour
 
     private float musicDuration;  
     private bool isPulsating = false; // if music time is 10 sec
+    public bool hasTriggeredMusicEnd = false;
+
 
     void Start()
     {
@@ -17,7 +19,20 @@ public class MusicTimer : MonoBehaviour
         {
             musicDuration = musicSource.clip.length;
         }
+
+        Events.OnMusicEnd += OnMusicEndHandler;
     }
+
+    void OnDestroy()
+    {
+        Events.OnMusicEnd -= OnMusicEndHandler;
+    }
+
+    private void OnMusicEndHandler()
+    {
+        Events.CheckHealthOnMusicEnd();
+    }
+    
 
     void Update()
     {
@@ -41,12 +56,18 @@ public class MusicTimer : MonoBehaviour
                 }
             }
         }
-        else if (musicSource != null && !musicSource.isPlaying)
+        else if (musicSource != null && !musicSource.isPlaying && !hasTriggeredMusicEnd)
         {
+            
             timerText.text = "00:00";
-            StopAllCoroutines(); 
+            StopAllCoroutines();
             timerText.transform.localScale = Vector3.one;
             isPulsating = false;
+
+            
+            hasTriggeredMusicEnd = true;
+            OnMusicEndHandler();
+          
         }
     }
 

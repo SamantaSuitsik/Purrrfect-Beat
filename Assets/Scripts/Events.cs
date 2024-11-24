@@ -43,4 +43,23 @@ public static class Events
         OnBeatHit?.Invoke(isHitOnBeat);
     }
 
+    public static event Action OnMusicEnd; // Music end event
+    public static void TriggerMusicEnd() => OnMusicEnd?.Invoke();
+
+    public static void CheckHealthOnMusicEnd()
+    {
+        if (RequestEnemyHealth() > RequestHealth()) 
+        {
+            EndGame(false); 
+        }
+        else if (RequestEnemyHealth() < RequestHealth()) 
+        {
+            EndGame(true);
+        }
+        else
+        {
+            EndGame(false); 
+        }
+    }
+
 }
