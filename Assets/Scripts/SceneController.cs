@@ -68,10 +68,12 @@ public class SceneController : MonoBehaviour
             if (Events.GameResult)
             {
                 EndGameText.text = "Level completed";
+                EndGameMusicManager.Instance.PlayWinMusic();
             }
             else
             {
                 EndGameText.text = "Game over";
+                EndGameMusicManager.Instance.PlayLoseMusic();
             }
         }
         else
@@ -80,4 +82,5 @@ public class SceneController : MonoBehaviour
         }
 
     }
+
 }

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
   m_Name: Losing
   m_EditorClassIdentifier: 
-  VolumeMin: 1
-  VolumeMax: 1
-  PitchMin: 1
-  PitchMax: 1
-  Cooldown: 0.1
-  AudioClips:
-  - {fileID: 8300000, guid: c2da81ee40e4721488cb17152eb8dfee, type: 3}
+  VolumeMin: 0.318
+  VolumeMax: 0.329
+  PitchMin: 0.8
+  PitchMax: 1.2
+  Cooldown: 0.3
+  Clips:
+  - {fileID: 8300000, guid: df28b1c6ef80a134c9696882e663ecee, type: 3}
+  - {fileID: 8300000, guid: 9a92a8f269372414fbd7d49ecc98f164, type: 3}

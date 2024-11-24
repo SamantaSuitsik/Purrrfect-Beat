@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
   m_Name: Winning
   m_EditorClassIdentifier: 
-  VolumeMin: 1
-  VolumeMax: 1
-  PitchMin: 1
-  PitchMax: 1
-  Cooldown: 0.1
-  Clips: []
+  VolumeMin: 0.361
+  VolumeMax: 0.365
+  PitchMin: 0.8
+  PitchMax: 1.2
+  Cooldown: 0.3
+  Clips:
+  - {fileID: 8300000, guid: efbcb668cf360e995b7427e4cfcd7454, type: 3}
+  - {fileID: 8300000, guid: 9a92a8f269372414fbd7d49ecc98f164, type: 3}

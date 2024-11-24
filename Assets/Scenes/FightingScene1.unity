@@ -792,6 +792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1701148400918061418, guid: 75ec0efb928a07ef1bc02ee365696bc3, type: 3}
+      propertyPath: Damage
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8186435220709174334, guid: 75ec0efb928a07ef1bc02ee365696bc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.95
@@ -1063,14 +1067,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 102611055861807756, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 74297b8e4aefba14996bcacba4623953, type: 2}
-    - target: {fileID: 102611055861807756, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7911243759280710796, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
       propertyPath: m_Name
       value: Player
