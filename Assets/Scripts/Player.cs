@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
         animator.Play("Idle");
-        Events.SetHealth(health);
 
         Events.OnSetHealth += UpdateHealth;
         Events.OnMusicEnd += CheckHealthOnMusicEnd;
@@ -84,6 +83,7 @@ public class Player : MonoBehaviour
     {
         if (health > value)
         {
+            print("I GOT HIT");
             animator.SetTrigger("GotDamage");
         }
         health = value;

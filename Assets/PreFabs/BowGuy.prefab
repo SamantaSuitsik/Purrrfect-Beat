@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 149e7ddf97e496a4cbeae98152452aae, type: 2}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: actualAttackDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

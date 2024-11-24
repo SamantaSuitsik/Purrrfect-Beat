@@ -13,8 +13,6 @@ public class Enemy : MonoBehaviour
     private float nextAttackTime;
 
     // Attack execution variables
-    public float actualAttackDelay = 0.2f;
-    private float actualAttackTime;
     private bool isAttacking = false;
 
     // Dodging variables
@@ -111,9 +109,8 @@ public class Enemy : MonoBehaviour
             nextAttackTime = Time.time + GetRandomAttackDelay();
         }
 
-        if (isAttacking && Time.time >= actualAttackTime)
+        if (isAttacking && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
-            ExecuteAttack();
             isAttacking = false;
         }
     }
@@ -123,11 +120,11 @@ public class Enemy : MonoBehaviour
         isAttacking = true;
         animator.SetTrigger("Attack");
         yield return null; // Wait one frame
-        actualAttackTime = Time.time + actualAttackDelay;
     }
 
     private void ExecuteAttack()
     {
+        // This is called when animation is in the last frame (from Editor)
         if (isPlayerDodging)
             return;
         Events.SetHealth(Events.RequestHealth() - Damage);

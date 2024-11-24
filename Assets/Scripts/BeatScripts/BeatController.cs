@@ -82,8 +82,6 @@ public class BeatController : MonoBehaviour
 
         BeatScroller beatScroller = newBeat.GetComponent<BeatScroller>();
         activeBeats.Add(beatScroller); // Add to active beats list
-
-        Debug.Log("The new beat is spawned!");
     }
 
     private void HandleHit()
