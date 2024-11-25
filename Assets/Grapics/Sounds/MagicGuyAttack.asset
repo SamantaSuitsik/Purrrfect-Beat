@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
-  m_Name: Dodge
+  m_Name: MagicGuyAttack
   m_EditorClassIdentifier: 
   VolumeMin: 0.264
-  VolumeMax: 0.688
-  PitchMin: 0.589
-  PitchMax: 1.636
-  Cooldown: 0.1
+  VolumeMax: 0.538
+  PitchMin: 0.642
+  PitchMax: 1.766
+  Cooldown: 1
   Clips:
-  - {fileID: 8300000, guid: 8a804fea69a2af0c0bab72995203c55d, type: 3}
-  - {fileID: 8300000, guid: e63d3ebde1cfc5acf9b2c0e63e3e5ea5, type: 3}
-  - {fileID: 8300000, guid: 273385f9b8099c2be91029db4b71d18c, type: 3}
+  - {fileID: 8300000, guid: 622d13038761e5868b214a41e2961274, type: 3}

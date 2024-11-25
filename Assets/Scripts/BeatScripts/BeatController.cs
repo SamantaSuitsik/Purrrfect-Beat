@@ -1,14 +1,14 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class BeatController : MonoBehaviour
 {
     public static BeatController Instance;
 
-    public AudioSource MusicSource;
+    private AudioSource musicSource;
     public float SongBpm;
 
     public static float SecPerBeat;
@@ -23,7 +23,9 @@ public class BeatController : MonoBehaviour
     public float BeatSpawnInterval;
     private float nextBeatTime;
 
-    private float[] spawnDelayList = { 2f, 4f, 6f, 9f };
+    // Mida väiksemad arvud seda pikem delay
+    private float[] spawnDelayList = { 1f, 2f, 4f, 6f, 8f, 10f };
+    private int spawnDelayListLength;
 
     // List to track active beats
     private List<BeatScroller> activeBeats = new List<BeatScroller>();
@@ -42,12 +44,19 @@ public class BeatController : MonoBehaviour
 
     void Start()
     {
-        MusicSource = GetComponent<AudioSource>();
+        musicSource = GetComponent<AudioSource>();
 
         SecPerBeat = 60f / SongBpm;
         DspSongTime = (float)AudioSettings.dspTime;
 
-        MusicSource.Play();
+        musicSource.clip = GameManager.Instance.Music;
+        musicSource.Play();
+
+        // Here we can change difficulty.
+        // When the difficulty is larger than the game is easier
+        // It is achieved by letting the beats have fewer choices
+        // for choosing a random spawn time.
+        spawnDelayListLength = GameManager.Instance.DifficultyMultiplier;
 
         BeatSpawnInterval = SecPerBeat;
         nextBeatTime = (float)AudioSettings.dspTime + BeatSpawnInterval;
@@ -55,7 +64,7 @@ public class BeatController : MonoBehaviour
 
     private void Update()
     {
-        if (!MusicSource.isPlaying)
+        if (!musicSource.isPlaying)
         {
             Debug.Log("Music has stopped. No more beats will be spawned.");
             return;
@@ -65,7 +74,7 @@ public class BeatController : MonoBehaviour
         {
             SpawnBeat();
             nextBeatTime += BeatSpawnInterval;
-            BeatSpawnInterval = SecPerBeat / spawnDelayList[Random.Range(0, spawnDelayList.Length)];
+            BeatSpawnInterval = SecPerBeat / spawnDelayList[Random.Range(0, spawnDelayListLength)];
         }
 
         // Handle key press for the closest beat

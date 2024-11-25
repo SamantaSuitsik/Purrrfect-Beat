@@ -14,6 +14,12 @@ public class GameSound : MonoBehaviour
     private void Awake()
     {
         Events.OnBeatHit += OnBeatHit;
+        
+    }
+
+    private void OnDestroy()
+    {
+        Events.OnBeatHit -= OnBeatHit;
     }
 
     private void OnBeatHit(bool isHitOnBeat)

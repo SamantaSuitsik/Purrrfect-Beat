@@ -52,10 +52,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagicGuy
       objectReference: {fileID: 0}
+    - target: {fileID: 5559871998354867397, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -410253079, guid: 00f5aac1152ff3648aa36d7ead04b911, type: 3}
     - target: {fileID: 8027577002230487529, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6d2863e57e164464f9d3e7674abb8b81, type: 2}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: maxAttackDelay
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: minAttackDelay
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: maxDodgeInterval
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: minDodgeInterval
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

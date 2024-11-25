@@ -109,7 +109,7 @@ public class Enemy : MonoBehaviour
             nextAttackTime = Time.time + GetRandomAttackDelay();
         }
 
-        if (isAttacking && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        if (isAttacking && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack_Sword"))
         {
             isAttacking = false;
         }
@@ -117,6 +117,10 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator PerformAttack()
     {
+        var attackSound = GameManager.Instance.AttackSound;
+        if (attackSound != null)
+            attackSound.Play();
+        
         isAttacking = true;
         animator.SetTrigger("Attack");
         yield return null; // Wait one frame
@@ -132,6 +136,7 @@ public class Enemy : MonoBehaviour
 
     private void HandleDodging()
     {
+        // TODO: fix bug where dodgeing happens in the middle of an attack
         if (isDodging)
         {
             
@@ -154,7 +159,10 @@ public class Enemy : MonoBehaviour
         isDodging = true;
         animator.SetTrigger("Dodge");
         dodgeEndTime = Time.time + dodgeDuration;
-
+        var dodgeSound = GameManager.Instance.DodgeSound;
+        if (dodgeSound != null)
+            dodgeSound.Play();
+        
         yield return null; // Wait one frame
     }
 

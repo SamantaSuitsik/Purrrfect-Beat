@@ -52,10 +52,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowGuy
       objectReference: {fileID: 0}
+    - target: {fileID: 5559871998354867397, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1620756904, guid: e7e061b260b1fd64cbf738c6fb6fa178, type: 3}
     - target: {fileID: 8027577002230487529, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 149e7ddf97e496a4cbeae98152452aae, type: 2}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: maxAttackDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: minAttackDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: maxDodgeInterval
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
+      propertyPath: minDodgeInterval
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8372188134585280120, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
       propertyPath: actualAttackDelay
       value: 1
