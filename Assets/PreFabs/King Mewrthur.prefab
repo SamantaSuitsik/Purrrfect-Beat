@@ -86,9 +86,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minAttackDelay: 0.8
-  maxAttackDelay: 3
+  maxAttackDelay: 2
   minDodgeInterval: 5
   maxDodgeInterval: 8
   dodgeDuration: 0.5
   health: 1
-  Damage: 0.01
+  Damage: 0.02

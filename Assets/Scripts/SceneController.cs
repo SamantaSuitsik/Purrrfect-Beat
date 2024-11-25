@@ -10,7 +10,6 @@ public class SceneController : MonoBehaviour
 {
     public TextMeshProUGUI EndGameText;
     public Transform EnemySpawnPoint;
-    private BeatController beatController;
 
     void Awake()
     {
@@ -19,8 +18,13 @@ public class SceneController : MonoBehaviour
 
     void Start()
     {
-        beatController = GetComponent<BeatController>();
-        if (GameManager.Instance.SelectedOpponentPrefab != null)
+        if (EndGameText != null)
+        {
+            UpdateEndGameText();
+        }
+
+        if (EnemySpawnPoint == null) return;
+        if (GameManager.Instance.SelectedOpponentPrefab != null && EnemySpawnPoint.position !=null)
         {
             Instantiate(GameManager.Instance.SelectedOpponentPrefab, EnemySpawnPoint.position, Quaternion.identity);
         }
@@ -29,10 +33,7 @@ public class SceneController : MonoBehaviour
             Debug.LogError("No opponent selected!");
         }
         
-        if (EndGameText != null) 
-        {
-            UpdateEndGameText();
-        }
+
     }
 
     public void StartNewGame()
