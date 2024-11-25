@@ -15,9 +15,14 @@ public class MusicTimer : MonoBehaviour
 
     void Start()
     {
-        if (musicSource != null)
+        if (GameManager.Instance.Music != null)
         {
-            musicDuration = musicSource.clip.length;
+            musicDuration = GameManager.Instance.Music.length;
+            print("Music duration = " + musicDuration);
+        }
+        else
+        {
+            Debug.LogError("AudioSource or AudioClip is missing!");
         }
 
     }
@@ -31,10 +36,10 @@ public class MusicTimer : MonoBehaviour
 
     void Update()
     {
-        if (musicSource != null && musicSource.isPlaying)
+        if ( musicSource.isPlaying)
         {
-            
-            float remainingTime = musicDuration - musicSource.time;
+
+            float remainingTime = Mathf.Max(0, musicDuration - musicSource.time);
 
             // Formating time
             string minutes = Mathf.Floor(remainingTime / 60).ToString("00");
