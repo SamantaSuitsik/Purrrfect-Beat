@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.99215686, g: 0.99215686, b: 0.94509804, a: 0.7529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -312,6 +312,12 @@ MonoBehaviour:
   HitPoint: {fileID: 87985624905095404}
   BeatPrefab: {fileID: 5325101289668335784, guid: 83d3cce9d5815614f92492d321595978, type: 3}
   BeatSpawnInterval: 0
+  SongDurationMinutes: 2
+  MinBeatInterval: 1
+  MaxBeatInterval: 5
+  Notes: []
+  songPosInBeats: 0
+  beatsShownInAdvance: 3
 --- !u!82 &5797183404855565819
 AudioSource:
   m_ObjectHideFlags: 0

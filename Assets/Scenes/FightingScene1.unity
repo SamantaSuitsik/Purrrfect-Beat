@@ -1045,6 +1045,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5040691924075657081, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8497241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040691924075657081, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8497241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040691924075657081, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8962264
+      objectReference: {fileID: 0}
     - target: {fileID: 5797183404855565819, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1069,6 +1081,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8687052902156229006, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
+      propertyPath: BeatPrefab
+      value: 
+      objectReference: {fileID: 5562854079457328133, guid: 49fec70a90c722949be40b9c50c489d5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1101,7 +1117,7 @@ MonoBehaviour:
   Bpm: 134
   SongDurationMinutes: 2
   Notes: []
-  BeatPrefab: {fileID: 5325101289668335784, guid: 83d3cce9d5815614f92492d321595978, type: 3}
+  BeatPrefab: {fileID: 5562854079457328133, guid: 49fec70a90c722949be40b9c50c489d5, type: 3}
   beatsShownInAdvance: 3
   MinBeatInterval: 1
   MaxBeatInterval: 5
