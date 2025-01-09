@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class BeatController : MonoBehaviour
@@ -20,8 +18,6 @@ public class BeatController : MonoBehaviour
 
     public GameObject BeatPrefab;
 
-    public float BeatSpawnInterval;
-    private float nextBeatTime;
 
     // // Milestone 2 
     // // Mida väiksemad arvud seda pikem delay
@@ -32,7 +28,7 @@ public class BeatController : MonoBehaviour
     private List<BeatScroller> activeBeats = new List<BeatScroller>();
     
     //NEW VER
-    public float SongDurationMinutes = 2f; //TODO CHANGE DYNAMICALLY
+    public float SongDurationMinutes = 2f;
     public int MinBeatInterval = 1;
     public int MaxBeatInterval = 5;
     public List<float> Notes = new List<float>();
@@ -75,14 +71,13 @@ public class BeatController : MonoBehaviour
         //
         // BeatSpawnInterval = SecPerBeat;
         // nextBeatTime = (float)AudioSettings.dspTime + BeatSpawnInterval;
-
+        SongDurationMinutes = musicSource.clip.length;
         GenerateBeatPositions();
     }
     
     void GenerateBeatPositions()
     {
         float songDurationBeats = SongBpm * SongDurationMinutes;
-
         float currentBeat = 1f;
 
         while (currentBeat <= songDurationBeats)
@@ -162,12 +157,6 @@ public class BeatController : MonoBehaviour
                     closestBeat = beat;
                 }
             }
-
-            // // Check hit/miss conditions
-            // float hitDistance = Vector2.Distance(closestBeat.transform.position, HitPoint.position);
-            //
-            // if (hitDistance > maxHitDistance)
-            //     return;
             
             float timeDiff = Mathf.Abs(closestBeat.beatOfThisNote - songPosInBeats);
 
@@ -209,10 +198,5 @@ public class BeatController : MonoBehaviour
     public void RemoveBeat(BeatScroller beat)
     {
         activeBeats.Remove(beat); // Remove the beat from the active list
-    }
-
-    public static float GetSongPositionInBeats()
-    {
-        return ((float)AudioSettings.dspTime - Instance.DspSongTime) / SecPerBeat;
     }
 }
