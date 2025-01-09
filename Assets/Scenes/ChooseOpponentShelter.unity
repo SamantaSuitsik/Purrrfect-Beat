@@ -537,6 +537,7 @@ MonoBehaviour:
   difficulty: 4
   dodgeSound: {fileID: 0}
   attackSound: {fileID: 11400000, guid: f93ebd7dba1838dc38433d65ea16e866, type: 2}
+  Scene: Shelter
 --- !u!1 &344566742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1122,7 @@ MonoBehaviour:
   difficulty: 2
   dodgeSound: {fileID: 11400000, guid: 13071e583d3077d49a0b35bcf1fcea8f, type: 2}
   attackSound: {fileID: 11400000, guid: c2601c079699dcf5eaff8dd1e71a67d0, type: 2}
+  Scene: Shelter
 --- !u!1 &910765694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +2053,7 @@ MonoBehaviour:
   difficulty: 3
   dodgeSound: {fileID: 0}
   attackSound: {fileID: 11400000, guid: 4288bad5ad93808498f0d18c224503a9, type: 2}
+  Scene: Shelter
 --- !u!1 &1706195338
 GameObject:
   m_ObjectHideFlags: 0
