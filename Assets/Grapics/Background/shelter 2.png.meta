@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b72eca5d5854b9042bc8f49dd5c32230
+guid: 9cc7e5dbf45ccb4cd9c3ac0bf2bd33b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shelter 2_0
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 364
+        width: 160
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92219067718af91178faf8aa8ea9b167
+      internalID: -723301615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelter 2_1
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 204
+        width: 161
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f06e5836b3a9769684481348efab1db
+      internalID: 889730516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelter 2_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 96
+        width: 319
+        height: 296
+      alignment: 9
+      pivot: {x: 0.47766918, y: 0.5121683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c84622d41ef11c1ab1d754f70612ae6
+      internalID: -1226356594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shelter 2_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 61
+        width: 290
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a643e7d0f0c72ff99a5055547c05a3aa
+      internalID: -864947993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shelter 2_0: -723301615
+      shelter 2_1: 889730516
+      shelter 2_2: -1226356594
+      shelter 2_3: -864947993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
