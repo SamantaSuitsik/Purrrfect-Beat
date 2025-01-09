@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ChooseOpponentStreet.unity
     guid: b674bcf80d0fc3bcc9675c6f64fbd527
   - enabled: 1
-    path: Assets/Scenes/FightingScene1.unity
+    path: Assets/Scenes/Home.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Pause.unity
@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseOpponentShelter.unity
     guid: 5156211a912f0ea40bfd68587b32c6db
+  - enabled: 1
+    path: Assets/Scenes/FightingScene1.unity
+    guid: 63c08966797b978408661f8d2a11f8a9
+  - enabled: 1
+    path: Assets/Scenes/Shelter.unity
+    guid: 5fffb260957ec7d73ad4d97f27687e8d
   m_configObjects: {}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class OpponentSelector : MonoBehaviour
     public int difficulty;
     public AudioClipGroup dodgeSound;
     public AudioClipGroup attackSound;
+    public String Scene;
 
     // Method to be called when this opponent is selected
     public void OnSelectOpponent()
@@ -18,6 +20,6 @@ public class OpponentSelector : MonoBehaviour
         GameManager.Instance.SelectOpponent(opponentPrefab,opponentMusic,opponentSongBpm, difficulty, dodgeSound, attackSound);
         
         // Load the main game scene
-        SceneManager.LoadScene(3); // Replace with your main scene name
+        SceneManager.LoadScene(Scene); // Replace with your main scene name
     }
 }
