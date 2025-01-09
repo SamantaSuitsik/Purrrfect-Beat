@@ -51,9 +51,19 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("LevelSelection");
     }
 
-    public void SelectOpponent()
+    public void SelectOpponentStreet()
     {
-        SceneManager.LoadScene("ChooseOpponent");
+        SceneManager.LoadScene("ChooseOpponentStreet");
+    }
+
+    public void SelectOpponentShelter()
+    {
+        SceneManager.LoadScene("ChooseOpponentShelter");
+    }
+
+    public void SelectOpponentHome()
+    {
+        SceneManager.LoadScene("ChooseOpponentHome");
     }
 
 

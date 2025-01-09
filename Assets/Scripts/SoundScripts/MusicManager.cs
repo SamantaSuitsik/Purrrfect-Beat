@@ -8,7 +8,7 @@ public class MusicManager : MonoBehaviour
     private AudioSource audioSource;
 
     
-    public string[] scenesWithMusic = { "MainMenu", "LevelSelection", "ChooseOpponent" };
+    public string[] scenesWithMusic = { "MainMenu", "LevelSelection", "ChooseOpponentHome","ChooseOpponentShelter","ChooseOpponentStreet" };
 
     void Awake()
     {

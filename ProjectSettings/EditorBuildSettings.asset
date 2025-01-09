@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelection.unity
     guid: 314a22d726d4c1fbea37ac1437e96581
   - enabled: 1
-    path: Assets/Scenes/ChooseOpponent.unity
+    path: Assets/Scenes/ChooseOpponentStreet.unity
     guid: b674bcf80d0fc3bcc9675c6f64fbd527
   - enabled: 1
     path: Assets/Scenes/FightingScene1.unity
@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelection.unity
     guid: 314a22d726d4c1fbea37ac1437e96581
+  - enabled: 1
+    path: Assets/Scenes/ChooseOpponentHome.unity
+    guid: b551ae3b11cd24e45b029ea12f6d1ed9
+  - enabled: 1
+    path: Assets/Scenes/ChooseOpponentShelter.unity
+    guid: 5156211a912f0ea40bfd68587b32c6db
   m_configObjects: {}

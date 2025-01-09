@@ -928,7 +928,9 @@ MonoBehaviour:
   scenesWithMusic:
   - MainMenu
   - LevelSelection
-  - ChooseOpponent
+  - ChooseOpponentHome
+  - ChooseOpponentStreet
+  - ChooseOpponentShelter
 --- !u!82 &959933135
 AudioSource:
   m_ObjectHideFlags: 0
