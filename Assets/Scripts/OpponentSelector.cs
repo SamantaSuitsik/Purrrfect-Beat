@@ -16,7 +16,7 @@ public class OpponentSelector : MonoBehaviour
     {
         // Assign the selected opponent to the GameManager
         GameManager.Instance.SelectOpponent(opponentPrefab,opponentMusic,opponentSongBpm, difficulty, dodgeSound, attackSound);
-
+        
         // Load the main game scene
         SceneManager.LoadScene(3); // Replace with your main scene name
     }

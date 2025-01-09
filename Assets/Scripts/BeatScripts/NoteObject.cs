@@ -18,17 +18,23 @@ public class NoteObject : MonoBehaviour
         if (Input.GetKeyDown(attackKey))
         {
 
-            float beatDistance = Mathf.Abs(BeatController.GetSongPositionInBeats() % 1);
-
-            if (beatDistance < 0.2f)
+            if (canBePressed)
             {
-                Debug.Log("Successful hit!");
                 gameObject.SetActive(false);
+                SoundManager.instance.NoteHit();
             }
-            else
-            {
-                Debug.Log("Missed hit");
-            }
+
+            // float beatDistance = Mathf.Abs(BeatController.GetSongPositionInBeats() % 1);
+            //
+            // if (beatDistance < 0.2f)
+            // {
+            //     Debug.Log("Successful hit!");
+            //     gameObject.SetActive(false);
+            // }
+            // else
+            // {
+            //     Debug.Log("Missed hit");
+            // }
 
 
 
@@ -37,7 +43,7 @@ public class NoteObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Activator")
+        if (other.CompareTag("Activator"))
         {
             canBePressed = true;
         }
@@ -45,9 +51,10 @@ public class NoteObject : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Activator")
+        if (other.CompareTag("Activator"))
         {
             canBePressed = false;
+            SoundManager.instance.NoteMiss();
         }
     }
 }

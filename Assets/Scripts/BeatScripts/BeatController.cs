@@ -23,12 +23,25 @@ public class BeatController : MonoBehaviour
     public float BeatSpawnInterval;
     private float nextBeatTime;
 
-    // Mida väiksemad arvud seda pikem delay
-    private float[] spawnDelayList = { 1f, 2f, 4f, 6f, 8f, 10f };
-    private int spawnDelayListLength;
-
+    // // Milestone 2 
+    // // Mida väiksemad arvud seda pikem delay
+    // private float[] spawnDelayList = { 1f, 2f, 4f, 6f, 8f, 10f };
+    // private int spawnDelayListLength;
+    //
     // List to track active beats
     private List<BeatScroller> activeBeats = new List<BeatScroller>();
+    
+    //NEW VER
+    public float SongDurationMinutes = 2f; //TODO CHANGE DYNAMICALLY
+    public int MinBeatInterval = 1;
+    public int MaxBeatInterval = 5;
+    public List<float> Notes = new List<float>();
+    private int nextIndex = 0;
+    private float songPosition;
+    //the current position of the song (in beats)
+    public float songPosInBeats;
+    public int beatsShownInAdvance = 3;
+    private static float maxHitDistance = 0.8f;
 
     void Awake()
     {
@@ -56,10 +69,31 @@ public class BeatController : MonoBehaviour
         // When the difficulty is larger than the game is easier
         // It is achieved by letting the beats have fewer choices
         // for choosing a random spawn time.
-        spawnDelayListLength = GameManager.Instance.DifficultyMultiplier;
+        
+        // Milestone 2
+        // spawnDelayListLength = GameManager.Instance.DifficultyMultiplier;
+        //
+        // BeatSpawnInterval = SecPerBeat;
+        // nextBeatTime = (float)AudioSettings.dspTime + BeatSpawnInterval;
 
-        BeatSpawnInterval = SecPerBeat;
-        nextBeatTime = (float)AudioSettings.dspTime + BeatSpawnInterval;
+        GenerateBeatPositions();
+    }
+    
+    void GenerateBeatPositions()
+    {
+        float songDurationBeats = SongBpm * SongDurationMinutes;
+
+        float currentBeat = 1f;
+
+        while (currentBeat <= songDurationBeats)
+        {
+            Notes.Add(currentBeat);
+
+            // Determine the next interval
+            int interval = Random.Range(MinBeatInterval, MaxBeatInterval + 1); // Inclusive of maxBeatInterval
+
+            currentBeat += interval;
+        }
     }
 
     private void Update()
@@ -70,13 +104,23 @@ public class BeatController : MonoBehaviour
             return;
         }
 
-        if ((float)AudioSettings.dspTime >= nextBeatTime) // Check if it's time to spawn a new beat
+        // //Milestone 2
+        // if ((float)AudioSettings.dspTime >= nextBeatTime) // Check if it's time to spawn a new beat
+        // {
+        //     SpawnBeat();
+        //     nextBeatTime += BeatSpawnInterval;
+        //     BeatSpawnInterval = SecPerBeat / spawnDelayList[Random.Range(0, spawnDelayListLength)];
+        // }
+
+        songPosition = (float) (AudioSettings.dspTime - DspSongTime);
+
+        songPosInBeats = songPosition / SecPerBeat;
+        
+        if (nextIndex < Notes.Count && Notes[nextIndex] < songPosInBeats + beatsShownInAdvance)
         {
             SpawnBeat();
-            nextBeatTime += BeatSpawnInterval;
-            BeatSpawnInterval = SecPerBeat / spawnDelayList[Random.Range(0, spawnDelayListLength)];
         }
-
+        
         // Handle key press for the closest beat
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -86,11 +130,13 @@ public class BeatController : MonoBehaviour
 
     private void SpawnBeat()
     {
-        // Creating beat at spawn point
-        GameObject newBeat = Instantiate(BeatPrefab, SpawnPoint.position, Quaternion.identity);
+        var beat = Instantiate<GameObject>(BeatPrefab, SpawnPoint.position, Quaternion.identity);
 
-        BeatScroller beatScroller = newBeat.GetComponent<BeatScroller>();
-        activeBeats.Add(beatScroller); // Add to active beats list
+        BeatScroller beatScrollerScript = beat.GetComponent<BeatScroller>();
+        beatScrollerScript.Initialize(Notes[nextIndex], beatsShownInAdvance);
+        activeBeats.Add(beatScrollerScript); // Add to active beats list
+
+        nextIndex++;
     }
 
     private void HandleHit()
@@ -117,23 +163,32 @@ public class BeatController : MonoBehaviour
                 }
             }
 
-            // Check hit/miss conditions
-            float hitDistance = Vector2.Distance(closestBeat.transform.position, HitPoint.position);
-            if (hitDistance < 0.2f)
+            // // Check hit/miss conditions
+            // float hitDistance = Vector2.Distance(closestBeat.transform.position, HitPoint.position);
+            //
+            // if (hitDistance > maxHitDistance)
+            //     return;
+            
+            float timeDiff = Mathf.Abs(closestBeat.beatOfThisNote - songPosInBeats);
+
+            if (timeDiff > maxHitDistance)
+                return;
+            
+            if (timeDiff < 0.05f)
             {
                 Debug.Log("Ultra hit!");
                 Events.SetDamagePower(0.02f);
                 Events.BeatHit(true);
                 HitPoint.GetComponent<EndPointController>().OnUltraHit();
             }
-            else if (hitDistance < 0.7f)
+            else if (timeDiff < 0.1f)
             {
                 Debug.Log("good hit!");
                 Events.SetDamagePower(0.015f);
                 Events.BeatHit(true);
                 HitPoint.GetComponent<EndPointController>().OnHit();
             }
-            else if (hitDistance < 1f) {
+            else if (timeDiff < 0.25f) {
                 Events.SetDamagePower(0.01f);
                 Events.BeatHit(true);
                 HitPoint.GetComponent<EndPointController>().OnBadHit();

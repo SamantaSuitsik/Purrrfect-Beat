@@ -11,7 +11,7 @@ public class ButtonController : MonoBehaviour
     public KeyCode keyToPress;
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()

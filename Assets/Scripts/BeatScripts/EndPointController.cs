@@ -15,7 +15,7 @@ public class EndPointController : MonoBehaviour
 
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         originalColor = spriteRenderer.color;
     }
 
@@ -40,10 +40,8 @@ public class EndPointController : MonoBehaviour
     }
 
     
-    private System.Collections.IEnumerator ChangeColor(Color newColor)
+    private IEnumerator ChangeColor(Color newColor)
     {
-
-
         spriteRenderer.color = newColor;
 
         yield return new WaitForSeconds(colorChangeDuration);
