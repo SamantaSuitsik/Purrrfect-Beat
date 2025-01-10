@@ -7,7 +7,7 @@ public class BeatController : MonoBehaviour
     public static BeatController Instance;
 
     private AudioSource musicSource;
-    public float SongBpm;
+    private float SongBpm;
 
     public static float SecPerBeat;
     private float DspSongTime;
@@ -28,7 +28,7 @@ public class BeatController : MonoBehaviour
     private List<BeatScroller> activeBeats = new List<BeatScroller>();
     
     //NEW VER
-    public float SongDurationMinutes = 2f;
+    private float SongDurationMinutes = 2f;
     public int MinBeatInterval = 1;
     public int MaxBeatInterval = 5;
     public List<float> Notes = new List<float>();
@@ -54,7 +54,8 @@ public class BeatController : MonoBehaviour
     void Start()
     {
         musicSource = GetComponent<AudioSource>();
-
+        SongBpm = GameManager.Instance.SongBpm;
+        
         SecPerBeat = 60f / SongBpm;
         DspSongTime = (float)AudioSettings.dspTime;
 

@@ -1085,6 +1085,10 @@ PrefabInstance:
       propertyPath: BeatPrefab
       value: 
       objectReference: {fileID: 5562854079457328133, guid: 49fec70a90c722949be40b9c50c489d5, type: 3}
+    - target: {fileID: 8687052902156229006, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
+      propertyPath: beatsShownInAdvance
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

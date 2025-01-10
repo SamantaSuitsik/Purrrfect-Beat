@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
 
         Events.OnSetHealth += UpdateHealth;
         Events.OnMusicEnd += CheckHealthOnMusicEnd;
+        Events.OnBeatHit += BeatHit;
 
 
     }
@@ -31,12 +32,12 @@ public class Player : MonoBehaviour
     {
         Events.OnSetHealth -= UpdateHealth;
         Events.OnMusicEnd -= CheckHealthOnMusicEnd;
+        Events.OnBeatHit -= BeatHit;
     }
 
 
     void Update()
     {
-        handleAttack();
         handleDodge();
         HandleCooldown();
     }
@@ -60,14 +61,13 @@ public class Player : MonoBehaviour
             Events.PlayerDodging(false);
         }
     }
-
-    void handleAttack()
+    void BeatHit(bool isHit)
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            animator.SetTrigger("Attack");
-            Events.TriggerPlayerAttack();
-        }
+        if (!isHit)
+            return;
+        animator.SetTrigger("Attack");
+        Events.TriggerPlayerAttack();
+
     }
     
     private void HandleCooldown()
