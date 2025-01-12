@@ -1,3 +1,4 @@
+using System;
 using System.Net;
 using UnityEngine;
 
@@ -12,18 +13,26 @@ public class BeatScroller : MonoBehaviour
     private EndPointController endPointCotroller;
     private float totalTravelTime;
     private float speedPhase1; 
-    private float leftoverBeats; 
+    private float leftoverBeats;
 
-    private float moveSpeed;
-
+    private SpriteRenderer spriteRenderer;    
     public void Initialize(float beat, float beatsShownInAdvance)
     {
         beatOfThisNote = beat;
         this.beatsShownInAdvance = beatsShownInAdvance;
     }
+    
+    private void Awake()
+    {
+        Events.OnSetLockBarLetter += LockTheBeatBar;
+    }
 
     void Start()
     {
+        // general
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        // music related
         //Milestone 2 version
         SpawnPoint = BeatController.Instance.SpawnPoint;
         EndPoint = BeatController.Instance.EndPoint;
@@ -97,8 +106,17 @@ public class BeatScroller : MonoBehaviour
             BeatController.Instance.RemoveBeat(this);
             Destroy(gameObject);
         }
-
     }
     
-    
+    private void OnDestroy()
+    {
+        Events.OnSetLockBarLetter -= LockTheBeatBar;
+    }
+
+    private void LockTheBeatBar(char letter)
+    {
+        // make note invisible - TO be changed.
+        // This method is probably not needed at all
+        // spriteRenderer.enabled = false;
+    }
 }

@@ -83,7 +83,6 @@ public class Player : MonoBehaviour
     {
         if (health > value)
         {
-            print("I GOT HIT");
             animator.SetTrigger("GotDamage");
         }
         health = value;

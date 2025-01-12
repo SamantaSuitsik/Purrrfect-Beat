@@ -50,6 +50,9 @@ public static class Events
     public static event Action<float> OnSetDamagepower;
     public static void SetDamagePower(float value) => OnSetDamagepower?.Invoke(value);
 
+    public static event Action OnSongStart;
+    public static void SetSongStart() => OnSongStart?.Invoke();
 
-
+    public static event Action<char> OnSetLockBarLetter;
+    public static void SetLockBarLetter(char value) => OnSetLockBarLetter?.Invoke(value);
 }

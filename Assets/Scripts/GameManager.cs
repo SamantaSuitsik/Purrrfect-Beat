@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class GameManager : MonoBehaviour
     public int DifficultyMultiplier { get; set; }
     public AudioClipGroup DodgeSound { get; set; }
     public AudioClipGroup AttackSound { get; set; }
+    private bool isSongStarted;
+    private float barLockTimer = 10000f;
 
     private void Awake()
     {
@@ -25,12 +29,25 @@ public class GameManager : MonoBehaviour
             // If an instance already exists and it's not this, destroy this to enforce the singleton pattern.
             Destroy(gameObject);
         }
+
+        Events.OnSongStart += SongStart;
+
+    }
+
+    private void OnDestroy()
+    {
+        Events.OnSongStart -= SongStart;
+    }
+
+    private void SongStart()
+    {
+        // isSongStarted = true;
+        SetBarLockTimer();
     }
 
     public void SelectOpponent(GameObject opponentPrefab, AudioClip opponentMusic, float opponentSongBpm,
         int difficulty, AudioClipGroup dodgeSound, AudioClipGroup oppAttackSound)
     {
-        print("opponent selected");
         SelectedOpponentPrefab = opponentPrefab;
         Music = opponentMusic;
         SongBpm = opponentSongBpm;
@@ -38,5 +55,34 @@ public class GameManager : MonoBehaviour
         DodgeSound = dodgeSound;
         AttackSound = oppAttackSound;
     }
-    
+
+    private void Update()
+    {
+        if (!isSongStarted)
+            return;
+
+        if (barLockTimer <= 0)
+        {
+            lockTheBeatBar();
+            SetBarLockTimer();
+        }
+
+        else
+        {
+            barLockTimer -= Time.deltaTime;
+        }
+    }
+
+    private void SetBarLockTimer()
+    {
+        barLockTimer = Random.Range(2f, 8f);
+    }
+
+    private void lockTheBeatBar()
+    {
+        var randomLetter = (char)Random.Range('A', 'Z');
+        print(randomLetter);
+        Events.SetLockBarLetter(randomLetter);
+        
+    }
 }

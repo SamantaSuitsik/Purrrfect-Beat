@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class BeatController : MonoBehaviour
@@ -15,9 +17,11 @@ public class BeatController : MonoBehaviour
     public Transform SpawnPoint;
     public Transform EndPoint;
     public Transform HitPoint;
-
     public GameObject BeatPrefab;
-
+    private EndPointController endPointController;
+    private Image barSprite;
+    private SpriteRenderer halo;
+    private SpriteRenderer barLock;
 
     // // Milestone 2 
     // // Mida väiksemad arvud seda pikem delay
@@ -49,10 +53,38 @@ public class BeatController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Events.OnSetLockBarLetter += LockTheBeatBar;
+    }
+
+    private void OnDestroy()
+    {
+        Events.OnSetLockBarLetter -= LockTheBeatBar;
+    }
+    
+    private void LockTheBeatBar(char letter)
+    {
+        // make bar grayed out and show lock
+        barSprite.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
+        barLock.enabled = true;
+        
+        // gray out halo - works a bit wrong right now
+        halo.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
+        
+        // TODO: make beatbar be on top of the beats (so beats are not seen)
+
+
     }
 
     void Start()
     {
+        // general
+        endPointController = HitPoint.GetComponent<EndPointController>();
+        barSprite = GetComponent<Image>();
+        barLock = transform.Find("Lock").GetComponent<SpriteRenderer>();
+        halo = HitPoint.GetComponentInChildren<SpriteRenderer>();
+        
+        // music
         musicSource = GetComponent<AudioSource>();
         SongBpm = GameManager.Instance.SongBpm;
         
@@ -61,6 +93,7 @@ public class BeatController : MonoBehaviour
 
         musicSource.clip = GameManager.Instance.Music;
         musicSource.Play();
+        Events.SetSongStart();
 
         // Here we can change difficulty.
         // When the difficulty is larger than the game is easier
@@ -169,25 +202,25 @@ public class BeatController : MonoBehaviour
                 Debug.Log("Ultra hit!");
                 Events.SetDamagePower(0.02f);
                 Events.BeatHit(true);
-                HitPoint.GetComponent<EndPointController>().OnUltraHit();
+                endPointController.OnUltraHit();
             }
             else if (timeDiff < 0.1f)
             {
                 Debug.Log("good hit!");
                 Events.SetDamagePower(0.015f);
                 Events.BeatHit(true);
-                HitPoint.GetComponent<EndPointController>().OnHit();
+                endPointController.OnHit();
             }
             else if (timeDiff < 0.25f) {
                 Events.SetDamagePower(0.01f);
                 Events.BeatHit(true);
-                HitPoint.GetComponent<EndPointController>().OnBadHit();
+                endPointController.OnBadHit();
             }
             else
             {
                 Debug.Log("Missed hit!");
                 Events.BeatHit(false);
-                HitPoint.GetComponent<EndPointController>().OnMiss();
+                endPointController.OnMiss();
             }
 
             // Remove and destroy the closest beat

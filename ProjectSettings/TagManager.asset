@@ -45,3 +45,6 @@ TagManager:
   - name: Circles
     uniqueID: 4237874807
     locked: 0
+  - name: Beatbar
+    uniqueID: 338883649
+    locked: 0
