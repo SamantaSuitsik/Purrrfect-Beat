@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     private bool isSongStarted;
     private float barLockTimer = 10000f;
 
+    private int missedHits = 0;
+
     private void Awake()
     {
         // If an instance of GameManager doesn't exist, set it to this
@@ -34,6 +36,16 @@ public class GameManager : MonoBehaviour
 
     }
 
+    private void OnEnable()
+    {
+        Events.OnSetHealth += HandlePlayerHealthChange;
+    }
+
+    private void OnDisable()
+    {
+        Events.OnSetHealth -= HandlePlayerHealthChange;
+    }
+
     private void OnDestroy()
     {
         Events.OnSongStart -= SongStart;
@@ -41,8 +53,8 @@ public class GameManager : MonoBehaviour
 
     private void SongStart()
     {
-        // isSongStarted = true;
-        SetBarLockTimer();
+         isSongStarted = true;
+        //SetBarLockTimer();
     }
 
     public void SelectOpponent(GameObject opponentPrefab, AudioClip opponentMusic, float opponentSongBpm,
@@ -56,7 +68,7 @@ public class GameManager : MonoBehaviour
         AttackSound = oppAttackSound;
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (!isSongStarted)
             return;
@@ -84,5 +96,24 @@ public class GameManager : MonoBehaviour
         print(randomLetter);
         Events.SetLockBarLetter(randomLetter);
         
+    }*/
+
+    private void HandlePlayerHealthChange(float newHealth)
+    {
+        if (newHealth < Events.RequestHealth()) //  If health decreased
+        {
+            missedHits++; //  Increase the number of missed attacks
+
+            if (missedHits >= 5) // If the player missed 2 attacks
+            {
+                missedHits = 0; 
+                var randomLetter = (char)Random.Range('A', 'Z'); // Random letter generates
+                Events.SetLockBarLetter(randomLetter); // Lock panel
+            }
+        }
+        else
+        {
+            missedHits = 0; 
+        }
     }
 }

@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: LockPanel
+    uniqueID: 2258112391
+    locked: 0
   - name: Circles
     uniqueID: 4237874807
     locked: 0
