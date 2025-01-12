@@ -12,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - LockPanel
+  - Beat
+  - BeatPanel
   - 
   - 
   - 
@@ -45,9 +45,9 @@ TagManager:
   - name: LockPanel
     uniqueID: 2258112391
     locked: 0
-  - name: Circles
+  - name: Beat
     uniqueID: 4237874807
     locked: 0
-  - name: Beatbar
+  - name: BeatPanel
     uniqueID: 338883649
     locked: 0

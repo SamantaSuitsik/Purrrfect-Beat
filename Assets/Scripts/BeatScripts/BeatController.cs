@@ -64,14 +64,14 @@ public class BeatController : MonoBehaviour
     
     private void LockTheBeatBar(char letter)
     {
-        // make bar grayed out and show lock
-        barSprite.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
-        barLock.enabled = true;
-        
-        // gray out halo - works a bit wrong right now
-        halo.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
-        
-        // TODO: make beatbar be on top of the beats (so beats are not seen)
+        // // make bar grayed out and show lock
+        // barSprite.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
+        // barLock.enabled = true;
+        //
+        // // gray out halo - works a bit wrong right now
+        // halo.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
+        //
+        // // TODO: make beatbar be on top of the beats (so beats are not seen)
 
 
     }
@@ -80,9 +80,9 @@ public class BeatController : MonoBehaviour
     {
         // general
         endPointController = HitPoint.GetComponent<EndPointController>();
-        barSprite = GetComponent<Image>();
-        barLock = transform.Find("Lock").GetComponent<SpriteRenderer>();
-        halo = HitPoint.GetComponentInChildren<SpriteRenderer>();
+        // barSprite = GetComponent<Image>();
+        // barLock = transform.Find("Lock").GetComponent<SpriteRenderer>();
+        // halo = HitPoint.GetComponentInChildren<SpriteRenderer>();
         
         // music
         musicSource = GetComponent<AudioSource>();
