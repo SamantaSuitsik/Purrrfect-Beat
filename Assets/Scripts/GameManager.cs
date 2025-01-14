@@ -92,9 +92,8 @@ public class GameManager : MonoBehaviour
 
     private void lockTheBeatBar()
     {
-        var randomLetter = (char)Random.Range('a', 'z');
-        print(randomLetter);
-        Events.SetLockBarLetter(randomLetter);
+        // Events.SetLockBarLetter(randomLetter);
+        Events.PowerfulAttack();
         
     }
 

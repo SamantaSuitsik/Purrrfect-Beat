@@ -59,4 +59,7 @@ public static class Events
 
     public static event Action OnUnlockPanel; //Event to unlock Beat panel
     public static void UnlockPanel() => OnUnlockPanel?.Invoke();
+    
+    public static event Action OnPowerfulAttack;
+    public static void PowerfulAttack() => OnPowerfulAttack?.Invoke();
 }

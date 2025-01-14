@@ -311,6 +311,7 @@ MonoBehaviour:
   EndPoint: {fileID: 56735824283272424}
   HitPoint: {fileID: 87985624905095404}
   BeatPrefab: {fileID: 5562854079457328133, guid: 49fec70a90c722949be40b9c50c489d5, type: 3}
+  Canvas: {fileID: 0}
   MinBeatInterval: 1
   MaxBeatInterval: 5
   Notes: []

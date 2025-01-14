@@ -1050,6 +1050,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5040691924075657081, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5963935483783071864, guid: 8077a2473b0e7074c9cbc3c0b8598e9c, type: 3}
       propertyPath: m_Name
       value: BeatPanel

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -38,17 +39,39 @@ public class Enemy : MonoBehaviour
         Events.OnBeatHit += OnBeatHit;
         Events.OnMusicEnd += CheckHealthOnMusicEnd;
         Events.OnSetDamagepower += SetDamagepower;
-        
+        Events.OnPowerfulAttack += PowerfulAttack;
+
     }
-
-
-
+    
     private void OnDestroy()
     {
         Events.OnPlayerDodging -= PlayerDodging;
         Events.OnBeatHit -= OnBeatHit;
         Events.OnMusicEnd -= CheckHealthOnMusicEnd;
         Events.OnSetDamagepower -= SetDamagepower;
+        Events.OnPowerfulAttack -= PowerfulAttack;
+    }
+
+    private void PowerfulAttack()
+    {
+        StartCoroutine(PlayPowerfulAttack());
+    }
+    
+    
+    
+    IEnumerator PlayPowerfulAttack()
+    {
+        var attackSound = GameManager.Instance.AttackSound;
+        if (attackSound != null)
+            attackSound.Play();
+        
+        isAttacking = true;
+        animator.SetTrigger("Lock");
+
+        // Wait for the animation to finish
+        yield return new WaitForSeconds(1f);
+
+        Events.SetLockBarLetter((char)Random.Range('a', 'z'));
     }
 
     private void SetDamagepower(float obj)
