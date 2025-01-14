@@ -42,6 +42,7 @@ public class BeatController : MonoBehaviour
     public float songPosInBeats;
     public int beatsShownInAdvance = 3;
     private static float maxHitDistance = 0.8f;
+    private bool isBeatPanelLocked;
 
     void Awake()
     {
@@ -55,34 +56,29 @@ public class BeatController : MonoBehaviour
         }
 
         Events.OnSetLockBarLetter += LockTheBeatBar;
+        Events.OnUnlockPanel += UnlockPanel;
     }
 
     private void OnDestroy()
     {
         Events.OnSetLockBarLetter -= LockTheBeatBar;
+        Events.OnUnlockPanel += UnlockPanel;
     }
-    
+
+    private void UnlockPanel()
+    {
+        isBeatPanelLocked = false;
+    }
+
     private void LockTheBeatBar(char letter)
     {
-        // // make bar grayed out and show lock
-        // barSprite.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
-        // barLock.enabled = true;
-        //
-        // // gray out halo - works a bit wrong right now
-        // halo.color = new Color(0.4196f, 0.4196f, 0.4196f, 1f);
-        //
-        // // TODO: make beatbar be on top of the beats (so beats are not seen)
-
-
+        isBeatPanelLocked = true;
     }
 
     void Start()
     {
         // general
         endPointController = HitPoint.GetComponent<EndPointController>();
-        // barSprite = GetComponent<Image>();
-        // barLock = transform.Find("Lock").GetComponent<SpriteRenderer>();
-        // halo = HitPoint.GetComponentInChildren<SpriteRenderer>();
         
         // music
         musicSource = GetComponent<AudioSource>();
@@ -151,7 +147,7 @@ public class BeatController : MonoBehaviour
         }
         
         // Handle key press for the closest beat
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) && !isBeatPanelLocked)
         {
             HandleHit();
         }
