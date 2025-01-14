@@ -40,7 +40,7 @@ public class LockPanelController : MonoBehaviour
             foreach (char c in Input.inputString)
             {
                 Debug.Log("Pressed key: " + c); // which letter pressed check
-                if (char.ToUpper(c) == currentLetter)
+                if (c == currentLetter)
                 {
                     Debug.Log("Correct letter pressed!");
                     Events.UnlockPanel();

@@ -18,10 +18,8 @@ public class BeatController : MonoBehaviour
     public Transform EndPoint;
     public Transform HitPoint;
     public GameObject BeatPrefab;
+    public RectTransform Canvas;
     private EndPointController endPointController;
-    private Image barSprite;
-    private SpriteRenderer halo;
-    private SpriteRenderer barLock;
 
     // // Milestone 2 
     // // Mida väiksemad arvud seda pikem delay
@@ -155,12 +153,20 @@ public class BeatController : MonoBehaviour
 
     private void SpawnBeat()
     {
-        var beat = Instantiate<GameObject>(BeatPrefab, SpawnPoint.position, Quaternion.identity);
+        var beat = Instantiate<GameObject>(BeatPrefab, SpawnPoint.position, Quaternion.identity,Canvas);
 
         BeatScroller beatScrollerScript = beat.GetComponent<BeatScroller>();
         beatScrollerScript.Initialize(Notes[nextIndex], beatsShownInAdvance);
+        
+        // Size the note
+        RectTransform beatRectTransform = beat.GetComponent<RectTransform>();
+        if (beatRectTransform != null)
+        {
+            beatRectTransform.localScale = new Vector3(132,132,1);
+        }
+        
         activeBeats.Add(beatScrollerScript); // Add to active beats list
-
+    
         nextIndex++;
     }
 

@@ -38,12 +38,12 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Events.OnSetHealth += HandlePlayerHealthChange;
+        // Events.OnSetHealth += HandlePlayerHealthChange;
     }
 
     private void OnDisable()
     {
-        Events.OnSetHealth -= HandlePlayerHealthChange;
+        // Events.OnSetHealth -= HandlePlayerHealthChange;
     }
 
     private void OnDestroy()
@@ -53,8 +53,8 @@ public class GameManager : MonoBehaviour
 
     private void SongStart()
     {
-         isSongStarted = true;
-        //SetBarLockTimer();
+        isSongStarted = true;
+        SetBarLockTimer();
     }
 
     public void SelectOpponent(GameObject opponentPrefab, AudioClip opponentMusic, float opponentSongBpm,
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         AttackSound = oppAttackSound;
     }
 
-    /*private void Update()
+    private void Update()
     {
         if (!isSongStarted)
             return;
@@ -87,33 +87,33 @@ public class GameManager : MonoBehaviour
 
     private void SetBarLockTimer()
     {
-        barLockTimer = Random.Range(2f, 8f);
+        barLockTimer = Random.Range(7f, 20f);
     }
 
     private void lockTheBeatBar()
     {
-        var randomLetter = (char)Random.Range('A', 'Z');
+        var randomLetter = (char)Random.Range('a', 'z');
         print(randomLetter);
         Events.SetLockBarLetter(randomLetter);
         
-    }*/
-
-    private void HandlePlayerHealthChange(float newHealth)
-    {
-        if (newHealth < Events.RequestHealth()) //  If health decreased
-        {
-            missedHits++; //  Increase the number of missed attacks
-
-            if (missedHits >= 5) // If the player missed 2 attacks
-            {
-                missedHits = 0; 
-                var randomLetter = (char)Random.Range('A', 'Z'); // Random letter generates
-                Events.SetLockBarLetter(randomLetter); // Lock panel
-            }
-        }
-        else
-        {
-            missedHits = 0; 
-        }
     }
+
+    // private void HandlePlayerHealthChange(float newHealth)
+    // {
+    //     if (newHealth < Events.RequestHealth()) //  If health decreased
+    //     {
+    //         missedHits++; //  Increase the number of missed attacks
+    //
+    //         if (missedHits >= 5) // If the player missed 2 attacks
+    //         {
+    //             missedHits = 0; 
+    //             var randomLetter = (char)Random.Range('a', 'z'); // Random letter generates
+    //             Events.SetLockBarLetter(randomLetter); // Lock panel
+    //         }
+    //     }
+    //     else
+    //     {
+    //         missedHits = 0; 
+    //     }
+    // }
 }
