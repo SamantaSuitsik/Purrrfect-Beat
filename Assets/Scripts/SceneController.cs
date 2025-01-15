@@ -106,4 +106,13 @@ public class SceneController : MonoBehaviour
 
     }
 
+    public void resetProgress()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        Debug.Log("Progress Reset");
+        
+        SelectLevel();
+    }
+
 }

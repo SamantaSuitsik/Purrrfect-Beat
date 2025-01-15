@@ -35,7 +35,7 @@ public class LockPanelController : MonoBehaviour
 
     private void Update()
     {
-        if (LockPanel.activeSelf && Input.anyKeyDown)
+        if (LockPanel != null && LockPanel.activeSelf && Input.anyKeyDown)
         {
             foreach (char c in Input.inputString)
             {

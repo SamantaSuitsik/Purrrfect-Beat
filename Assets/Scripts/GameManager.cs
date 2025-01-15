@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    public int CurrentLevel { get; set; }
+    public int CurrentOpponent { get; set; }
     public GameObject SelectedOpponentPrefab { get; private set; }
     public AudioClip Music { get; private set; }
     public float SongBpm { get; private set; }
@@ -33,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
 
         Events.OnSongStart += SongStart;
-
+        Events.OnEndGame += EndGame;
     }
 
     private void OnEnable()
@@ -49,6 +52,46 @@ public class GameManager : MonoBehaviour
     private void OnDestroy()
     {
         Events.OnSongStart -= SongStart;
+        Events.OnEndGame -= EndGame;
+    }
+
+    private void EndGame()
+    {
+        if (!Events.GameResult)
+            return;
+        UnlockProgress();
+    }
+
+    private void UnlockProgress()
+    {
+        // Unlock the next opponent in the current level
+        string opponentKey = $"Level{CurrentLevel}_UnlockedOpponent";
+        int unlockedOpponents = PlayerPrefs.GetInt(opponentKey, 1);
+
+        if (CurrentOpponent == unlockedOpponents && unlockedOpponents < 3)
+        {
+            PlayerPrefs.SetInt(opponentKey, unlockedOpponents + 1);
+            PlayerPrefs.Save();
+            Debug.Log($"Unlocked Opponent {unlockedOpponents + 1} in Level {CurrentLevel}");
+        }
+
+        // Check if all opponents in the current level are defeated
+        if (CurrentOpponent >= 3)
+        {
+            UnlockNextLevel();
+        }
+    }
+
+    private void UnlockNextLevel()
+    {
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        if (CurrentLevel >= unlockedLevel && unlockedLevel < 3)
+        {
+            PlayerPrefs.SetInt("UnlockedLevel", unlockedLevel + 1);
+            PlayerPrefs.Save();
+            Debug.Log($"Unlocked Level {unlockedLevel + 1}");
+        }
     }
 
     private void SongStart()
@@ -58,7 +101,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void SelectOpponent(GameObject opponentPrefab, AudioClip opponentMusic, float opponentSongBpm,
-        int difficulty, AudioClipGroup dodgeSound, AudioClipGroup oppAttackSound)
+        int difficulty, AudioClipGroup dodgeSound, AudioClipGroup oppAttackSound, int currentLevel, int currentOpponent)
     {
         SelectedOpponentPrefab = opponentPrefab;
         Music = opponentMusic;
@@ -66,6 +109,8 @@ public class GameManager : MonoBehaviour
         DifficultyMultiplier = difficulty;
         DodgeSound = dodgeSound;
         AttackSound = oppAttackSound;
+        CurrentLevel = currentLevel;
+        CurrentOpponent = currentOpponent;
     }
 
     private void Update()
@@ -82,6 +127,18 @@ public class GameManager : MonoBehaviour
         else
         {
             barLockTimer -= Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space)) // TODO remove
+        {
+            UnlockProgress();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            Debug.Log("Progress Reset");
         }
     }
 

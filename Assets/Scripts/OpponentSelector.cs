@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class OpponentSelector : MonoBehaviour
 {
-    // Assign this in the Inspector with the opponent prefab
+    public int CurrentLevel;
+    public int CurrentOpponent;
     public GameObject opponentPrefab;
     public AudioClip opponentMusic;
     public float opponentSongBpm;
@@ -17,7 +18,7 @@ public class OpponentSelector : MonoBehaviour
     public void OnSelectOpponent()
     {
         // Assign the selected opponent to the GameManager
-        GameManager.Instance.SelectOpponent(opponentPrefab,opponentMusic,opponentSongBpm, difficulty, dodgeSound, attackSound);
+        GameManager.Instance.SelectOpponent(opponentPrefab,opponentMusic,opponentSongBpm, difficulty, dodgeSound, attackSound, CurrentLevel, CurrentOpponent);
         
         // Load the main game scene
         SceneManager.LoadScene(Scene); // Replace with your main scene name
