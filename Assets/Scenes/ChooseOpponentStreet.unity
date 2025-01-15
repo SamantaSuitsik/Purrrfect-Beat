@@ -490,7 +490,7 @@ MonoBehaviour:
   opponentPrefab: {fileID: 2289438635920556873, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
   opponentMusic: {fileID: 8300000, guid: f7dde5623bfb0135286830a31e30f5f4, type: 3}
   opponentSongBpm: 80
-  difficulty: 4
+  difficulty: 3
   dodgeSound: {fileID: 0}
   attackSound: {fileID: 11400000, guid: f93ebd7dba1838dc38433d65ea16e866, type: 2}
   Scene: FightingScene1
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   opponentPrefab: {fileID: 8967218788191323227, guid: 75ec0efb928a07ef1bc02ee365696bc3, type: 3}
   opponentMusic: {fileID: 8300000, guid: acf57d2015d89be4d86231a7e07f3d6e, type: 3}
   opponentSongBpm: 129
-  difficulty: 2
+  difficulty: 1
   dodgeSound: {fileID: 11400000, guid: 13071e583d3077d49a0b35bcf1fcea8f, type: 2}
   attackSound: {fileID: 11400000, guid: c2601c079699dcf5eaff8dd1e71a67d0, type: 2}
   Scene: FightingScene1
@@ -1923,7 +1923,7 @@ MonoBehaviour:
   opponentPrefab: {fileID: 5823021972489219557, guid: d199a5d5e601f8976b56ce0161558e55, type: 3}
   opponentMusic: {fileID: 8300000, guid: eb8ca48c7f5897054b7b16b6bfcaa3fd, type: 3}
   opponentSongBpm: 85
-  difficulty: 3
+  difficulty: 2
   dodgeSound: {fileID: 0}
   attackSound: {fileID: 11400000, guid: 4288bad5ad93808498f0d18c224503a9, type: 2}
   Scene: FightingScene1

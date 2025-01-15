@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 4
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 15
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5706201, y: 0.0034503937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbcff828b863a2408772216cba76743
+      internalID: 1044700596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 13
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5679041, y: 0.010071564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ec744c611c8d4498b70c2b02c5d0ac
+      internalID: 1519447807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 268
+        width: 18
+        height: 40
+      alignment: 9
+      pivot: {x: 0.60132706, y: 0.0075500486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac69bc676bdc4746bac07c6b4e14ca6
+      internalID: -2103249662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 210
+        width: 20
+        height: 36
+      alignment: 9
+      pivot: {x: 0.3692947, y: 0.02074729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4ef9d6c63ccff48b1b7b786d88fac3
+      internalID: 1962148437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 23
+        height: 30
+      alignment: 9
+      pivot: {x: 0.38982734, y: 0.011978149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2510fc13240d143a9da07434fc6948
+      internalID: 1187093709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 126
+        width: 50
+        height: 27
+      alignment: 9
+      pivot: {x: 0.26912844, y: 0.030748155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f438aea6624ffa84c8ec9b9a9f2f4be2
+      internalID: -350298640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 84
+        width: 63
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4628a490cbde7f04a80ae2444c58e6c8
+      internalID: -1035982114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 42
+        width: 55
+        height: 20
+      alignment: 9
+      pivot: {x: 0.13257919, y: 0.027391434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c5d3fa5c484f2449b705242ea93a97
+      internalID: -799519505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MEOWTAR_THE_BLUE_Attack_2_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 57
+        height: 25
+      alignment: 9
+      pivot: {x: 0.13975304, y: 0.017610509}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77960c6963e9e04a84df433333166c1
+      internalID: 786652491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MEOWTAR_THE_BLUE_Attack_2_0: 1044700596
+      MEOWTAR_THE_BLUE_Attack_2_1: -1944195855
+      MEOWTAR_THE_BLUE_Attack_2_10: -1035982114
+      MEOWTAR_THE_BLUE_Attack_2_11: -776429608
+      MEOWTAR_THE_BLUE_Attack_2_12: -799519505
+      MEOWTAR_THE_BLUE_Attack_2_13: -1093781062
+      MEOWTAR_THE_BLUE_Attack_2_14: -277108679
+      MEOWTAR_THE_BLUE_Attack_2_15: 786652491
+      MEOWTAR_THE_BLUE_Attack_2_16: -1572486971
+      MEOWTAR_THE_BLUE_Attack_2_2: 1519447807
+      MEOWTAR_THE_BLUE_Attack_2_3: -275912478
+      MEOWTAR_THE_BLUE_Attack_2_4: -2103249662
+      MEOWTAR_THE_BLUE_Attack_2_5: 1962148437
+      MEOWTAR_THE_BLUE_Attack_2_6: -151391201
+      MEOWTAR_THE_BLUE_Attack_2_7: 1187093709
+      MEOWTAR_THE_BLUE_Attack_2_8: -350298640
+      MEOWTAR_THE_BLUE_Attack_2_9: 564380463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

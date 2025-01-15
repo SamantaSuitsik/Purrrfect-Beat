@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     public float dodgeDuration = 0.5f;
     private float dodgeEndTime;
     private bool isPerformingBeatDodge;
+    
 
     // Health
     public float health = 1.0f;
@@ -70,7 +71,7 @@ public class Enemy : MonoBehaviour
 
         // Wait for the animation to finish
         yield return new WaitForSeconds(1f);
-
+        //Events.SetLockBarLetter(lockChars[Random.Range(0, lockChars.Length)]);
         Events.SetLockBarLetter((char)Random.Range('a', 'z'));
     }
 
