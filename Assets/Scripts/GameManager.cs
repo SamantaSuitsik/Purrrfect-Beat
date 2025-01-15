@@ -129,16 +129,9 @@ public class GameManager : MonoBehaviour
             barLockTimer -= Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space)) // TODO remove
+        if (Input.GetKeyDown(KeyCode.Space)) // TODO ONLY FOR debugging - remove later!!
         {
             UnlockProgress();
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            PlayerPrefs.DeleteAll();
-            PlayerPrefs.Save();
-            Debug.Log("Progress Reset");
         }
     }
 
