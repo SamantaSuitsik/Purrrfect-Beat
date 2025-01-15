@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
   m_Name: MagicGuyAttack
   m_EditorClassIdentifier: 
-  VolumeMin: 0.264
-  VolumeMax: 0.538
+  VolumeMin: 0.147
+  VolumeMax: 0.404
   PitchMin: 0.642
   PitchMax: 1.766
   Cooldown: 1

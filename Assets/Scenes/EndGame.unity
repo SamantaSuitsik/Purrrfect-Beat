@@ -727,8 +727,8 @@ RectTransform:
   m_LocalScale: {x: 0.30744296, y: 0.30744296, z: 0.30744296}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 883702406}
   - {fileID: 1214163625}
+  - {fileID: 883702406}
   - {fileID: 284469028}
   m_Father: {fileID: 29059290}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Choose opponent
+  m_text: Level select
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
   m_sharedMaterial: {fileID: -5794547126978979126, guid: 285738b6472f622efa15593ec6a8066a, type: 2}

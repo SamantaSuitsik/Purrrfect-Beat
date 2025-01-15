@@ -31,8 +31,8 @@ public class BeatController : MonoBehaviour
     
     //NEW VER
     private float SongDurationMinutes = 2f;
-    public int MinBeatInterval = 1;
-    public int MaxBeatInterval = 5;
+    public float MinBeatInterval = 1f;
+    public float MaxBeatInterval = 3f;
     public List<float> Notes = new List<float>();
     private int nextIndex = 0;
     private float songPosition;
@@ -113,7 +113,7 @@ public class BeatController : MonoBehaviour
             Notes.Add(currentBeat);
 
             // Determine the next interval
-            int interval = Random.Range(MinBeatInterval, MaxBeatInterval + 1); // Inclusive of maxBeatInterval
+            float interval = Random.Range(MinBeatInterval, MaxBeatInterval + 1); // Inclusive of maxBeatInterval
 
             currentBeat += interval;
         }
@@ -194,26 +194,26 @@ public class BeatController : MonoBehaviour
                 }
             }
             
-            float timeDiff = Mathf.Abs(closestBeat.beatOfThisNote - songPosInBeats);
-
+            // float timeDiff = Mathf.Abs(closestBeat.beatOfThisNote - songPosInBeats);
+            float timeDiff = Vector2.Distance(closestBeat.transform.position, HitPoint.position);
             if (timeDiff > maxHitDistance)
                 return;
             
-            if (timeDiff < 0.05f)
+            if (timeDiff < 0.2f)
             {
                 Debug.Log("Ultra hit!");
                 Events.SetDamagePower(0.02f);
                 Events.BeatHit(true);
                 endPointController.OnUltraHit();
             }
-            else if (timeDiff < 0.1f)
+            else if (timeDiff < 0.7f)
             {
                 Debug.Log("good hit!");
                 Events.SetDamagePower(0.015f);
                 Events.BeatHit(true);
                 endPointController.OnHit();
             }
-            else if (timeDiff < 0.25f) {
+            else if (timeDiff < 1f) {
                 Events.SetDamagePower(0.01f);
                 Events.BeatHit(true);
                 endPointController.OnBadHit();

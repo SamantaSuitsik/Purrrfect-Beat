@@ -71,6 +71,9 @@ public class Enemy : MonoBehaviour
 
         // Wait for the animation to finish
         yield return new WaitForSeconds(1f);
+        
+        Events.SetHealth(Events.RequestHealth() - (Damage+0.025f));
+
         //Events.SetLockBarLetter(lockChars[Random.Range(0, lockChars.Length)]);
         Events.SetLockBarLetter((char)Random.Range('a', 'z'));
     }
