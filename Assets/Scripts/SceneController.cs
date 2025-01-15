@@ -5,11 +5,15 @@ using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
     public TextMeshProUGUI EndGameText;
     public Transform EnemySpawnPoint;
+    public Button NextLevelButton;
+
+    private bool isPaused = false;
 
     void Awake()
     {
@@ -18,6 +22,11 @@ public class SceneController : MonoBehaviour
 
     void Start()
     {
+        if (NextLevelButton != null)
+        {
+            NextLevelButton.gameObject.SetActive(false); // by default Next level button is not active
+        } 
+
         if (EndGameText != null)
         {
             UpdateEndGameText();
@@ -34,6 +43,31 @@ public class SceneController : MonoBehaviour
         }
         
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!isPaused)
+            {
+                PauseGame();
+            }
+        }
+    }
+
+    void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f; 
+        SceneManager.LoadScene("Pause", LoadSceneMode.Additive); 
+    }
+
+    public void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        SceneManager.UnloadSceneAsync("Pause"); 
     }
 
     public void StartNewGame()
@@ -92,9 +126,19 @@ public class SceneController : MonoBehaviour
             {
                 EndGameText.text = "Great! You won!";
                 EndGameMusicManager.Instance.PlayWinMusic();
+
+                if (NextLevelButton != null)
+                {
+                    NextLevelButton.gameObject.SetActive(true);
+                }
             }
             else
             {
+                if (NextLevelButton != null)
+                {
+                    NextLevelButton.gameObject.SetActive(false);
+                }
+
                 EndGameText.text = "You lose!";
                 EndGameMusicManager.Instance.PlayLoseMusic();
             }

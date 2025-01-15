@@ -8,6 +8,14 @@ public class LockPanelController : MonoBehaviour
     public TextMeshProUGUI LetterText; // Text with a random letter
     private char currentLetter;
 
+    private void Awake()
+    {
+        if (LockPanel != null)
+        {
+            DontDestroyOnLoad(LockPanel);
+        }
+    }
+
     private void OnEnable()
     {
         Events.OnSetLockBarLetter += ActivateLock;
@@ -22,7 +30,14 @@ public class LockPanelController : MonoBehaviour
 
     private void ActivateLock(char letter)
     {
+        
         currentLetter = letter;
+
+        if (LetterText == null)
+        {
+            return;
+        }
+
         LetterText.text = currentLetter.ToString();
         Debug.Log("Current letter: " + currentLetter);
         LockPanel.SetActive(true);
@@ -30,6 +45,10 @@ public class LockPanelController : MonoBehaviour
 
     private void DeactivateLock()
     {
+        if (LockPanel == null)
+        {
+            return;
+        } 
         LockPanel.SetActive(false);
     }
 
