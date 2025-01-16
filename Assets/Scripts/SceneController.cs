@@ -99,6 +99,10 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("ChooseOpponentHome");
     }
+    public void HowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
 
 
 
