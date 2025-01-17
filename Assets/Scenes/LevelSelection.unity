@@ -534,7 +534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Crowded Shelter
+  m_text: 2. Crowded Shelter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
   m_sharedMaterial: {fileID: -5794547126978979126, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sweet Home
+  m_text: 3. Sweet Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
   m_sharedMaterial: {fileID: -5794547126978979126, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
@@ -910,6 +910,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndGameText: {fileID: 0}
   EnemySpawnPoint: {fileID: 0}
+  NextLevelButton: {fileID: 0}
+  PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &918807255
 Transform:
   m_ObjectHideFlags: 0
@@ -1675,7 +1678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lonely Street
+  m_text: '1. Lonely Street
 
 '
   m_isRightToLeft: 0

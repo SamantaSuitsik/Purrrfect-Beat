@@ -23,14 +23,17 @@ public class EndPointController : MonoBehaviour
     public void OnUltraHit()
     {
         StartCoroutine(ChangeColor(UltraHitColor));
+        FindObjectOfType<InGameGuide>().OnBeatHit();
     }
     public void OnHit()
     {
         StartCoroutine(ChangeColor(HitColor));
+        FindObjectOfType<InGameGuide>().OnBeatHit();
     }
     public void OnBadHit()
     {
         StartCoroutine(ChangeColor(BadHitColor));
+        FindObjectOfType<InGameGuide>().OnBeatHit();
     }
 
 

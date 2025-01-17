@@ -41,6 +41,7 @@ public class LockPanelController : MonoBehaviour
         LetterText.text = currentLetter.ToString();
         Debug.Log("Current letter: " + currentLetter);
         LockPanel.SetActive(true);
+        FindObjectOfType<InGameGuide>().OnLockPanelAppear();
     }
 
     private void DeactivateLock()
@@ -50,6 +51,7 @@ public class LockPanelController : MonoBehaviour
             return;
         } 
         LockPanel.SetActive(false);
+        FindObjectOfType<InGameGuide>().OnLockPanelComplete();
     }
 
     private void Update()

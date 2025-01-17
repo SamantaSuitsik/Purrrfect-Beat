@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lonely Street
+  m_text: '1. Lonely Street
 
     Choose your opponent'
   m_isRightToLeft: 0

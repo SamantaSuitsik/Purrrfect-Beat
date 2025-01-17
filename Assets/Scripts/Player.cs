@@ -97,6 +97,7 @@ public class Player : MonoBehaviour
         if (health > value)
         {
             animator.SetTrigger("GotDamage");
+            FindObjectOfType<InGameGuide>().OnEnemyHitPlayer();
         }
         health = value;
             
