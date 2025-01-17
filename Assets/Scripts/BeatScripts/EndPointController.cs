@@ -10,6 +10,7 @@ public class EndPointController : MonoBehaviour
     public Color HitColor = Color.yellow;
     public Color BadHitColor = new Color(1f, 0.647f, 0f);
     public Color missColor = Color.red;
+    int currentLevel = GameManager.Instance.CurrentLevel;
 
     public float colorChangeDuration = 0.1f;
 
@@ -23,17 +24,30 @@ public class EndPointController : MonoBehaviour
     public void OnUltraHit()
     {
         StartCoroutine(ChangeColor(UltraHitColor));
-        FindObjectOfType<InGameGuide>().OnBeatHit();
+
+        if (currentLevel == 1)
+        {
+            FindObjectOfType<InGameGuide>().OnBeatHit();
+        }
+        
     }
     public void OnHit()
     {
         StartCoroutine(ChangeColor(HitColor));
-        FindObjectOfType<InGameGuide>().OnBeatHit();
+        if (currentLevel == 1)
+        {
+            FindObjectOfType<InGameGuide>().OnBeatHit();
+        }
+       
     }
     public void OnBadHit()
     {
         StartCoroutine(ChangeColor(BadHitColor));
-        FindObjectOfType<InGameGuide>().OnBeatHit();
+        if (currentLevel == 1)
+        {
+            FindObjectOfType<InGameGuide>().OnBeatHit();
+        }
+        
     }
 
 

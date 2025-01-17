@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public float dodgeCooldown = 5.0f;
     private float nextDodgeAvailableTime = 0f;
     private bool isCooldown = false;
+    int currentLevel = GameManager.Instance.CurrentLevel;
 
 
     void Start()
@@ -97,7 +98,11 @@ public class Player : MonoBehaviour
         if (health > value)
         {
             animator.SetTrigger("GotDamage");
-            FindObjectOfType<InGameGuide>().OnEnemyHitPlayer();
+            if (currentLevel == 1)
+            {
+                FindObjectOfType<InGameGuide>().OnEnemyHitPlayer();
+            }
+            
         }
         health = value;
             

@@ -40,16 +40,14 @@ public class InGameGuide : MonoBehaviour
         int currentLevel = GameManager.Instance.CurrentLevel;
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
 
-        if (unlockedLevel == 1 && currentLevel == 1)
-        {
             // Check if on the beat panel is at least one beat
-            if (beatPanel.transform.childCount > 0 && currentStep == 0)
+            if (beatPanel.transform.childCount > 0 && currentStep == 0 && unlockedLevel == 1 && currentLevel == 1)
             {
                 PauseGame();
                 ShowHint(0); // First hint
                 CancelInvoke(nameof(CheckForBeats)); // Stop checking
             }
-        }
+        
        
     }
 

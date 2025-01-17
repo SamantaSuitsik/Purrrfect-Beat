@@ -7,6 +7,7 @@ public class LockPanelController : MonoBehaviour
     public GameObject LockPanel; // UI panel for the lock
     public TextMeshProUGUI LetterText; // Text with a random letter
     private char currentLetter;
+    int currentLevel = GameManager.Instance.CurrentLevel;
 
     private void Awake()
     {
@@ -41,7 +42,12 @@ public class LockPanelController : MonoBehaviour
         LetterText.text = currentLetter.ToString();
         Debug.Log("Current letter: " + currentLetter);
         LockPanel.SetActive(true);
-        FindObjectOfType<InGameGuide>().OnLockPanelAppear();
+
+        if (currentLevel == 1)
+        {
+            FindObjectOfType<InGameGuide>().OnLockPanelAppear();
+        }
+        
     }
 
     private void DeactivateLock()
@@ -51,7 +57,10 @@ public class LockPanelController : MonoBehaviour
             return;
         } 
         LockPanel.SetActive(false);
-        FindObjectOfType<InGameGuide>().OnLockPanelComplete();
+        if (currentLevel == 1)
+        {
+            FindObjectOfType<InGameGuide>().OnLockPanelComplete();
+        }
     }
 
     private void Update()
