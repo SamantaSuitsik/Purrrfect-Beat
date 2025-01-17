@@ -8,7 +8,9 @@ public class MusicTimer : MonoBehaviour
     public AudioSource musicSource;
     public TextMeshProUGUI timerText;         
 
-    private float musicDuration;  
+    private float musicDuration;
+    private float pausedTime = 0f; 
+    private bool isPaused = false;
     private bool isPulsating = false; // if music time is 10 sec
     public bool hasTriggeredMusicEnd = false;
 
@@ -36,7 +38,7 @@ public class MusicTimer : MonoBehaviour
 
     void Update()
     {
-        if ( musicSource.isPlaying)
+        if (!isPaused && musicSource != null && musicSource.isPlaying)
         {
 
             float remainingTime = Mathf.Max(0, musicDuration - musicSource.time);
@@ -56,7 +58,7 @@ public class MusicTimer : MonoBehaviour
                 }
             }
         }
-        else if (musicSource != null && !musicSource.isPlaying && !hasTriggeredMusicEnd)
+        else if (musicSource != null && !musicSource.isPlaying && !hasTriggeredMusicEnd && !isPaused)
         {
             
             timerText.text = "00:00";
@@ -70,21 +72,40 @@ public class MusicTimer : MonoBehaviour
           
         }
     }
+    public void PauseTimer()
+    {
+        if (!isPaused)
+        {
+            isPaused = true;
+            pausedTime += musicSource.time;
+            musicSource.Pause(); 
+        }
+    }
 
-   
+    public void ResumeTimer()
+    {
+        if (isPaused)
+        {
+            isPaused = false;
+            musicSource.time = pausedTime;
+            musicSource.Play();
+        }
+    }
+
+
     private IEnumerator PulseTimer()
     {
         while (isPulsating)
         {
            
-            for (float t = 0; t <= 1; t += Time.deltaTime * 2)
+            for (float t = 0; t <= 1; t += Time.unscaledDeltaTime * 2)
             {
                 timerText.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 1.2f, t);
                 yield return null;
             }
 
 
-            for (float t = 0; t <= 1; t += Time.deltaTime * 2)
+            for (float t = 0; t <= 1; t += Time.unscaledDeltaTime * 2)
             {
                 timerText.transform.localScale = Vector3.Lerp(Vector3.one * 1.2f, Vector3.one, t);
                 yield return null;

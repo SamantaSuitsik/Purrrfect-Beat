@@ -347,16 +347,70 @@ PrefabInstance:
     m_TransformParent: {fileID: 29059290}
     m_Modifications:
     - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235764711}
+      objectReference: {fileID: 235764712}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 235764712}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 235764712}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: LoadNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SelectOpponentHome
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SelectOpponentHome
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SceneController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 86561122907822118, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6700484528777731175, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
       propertyPath: m_text
-      value: Next Level
+      value: 'Next Enemy
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6700484528777731175, guid: eef4f56182c98a64e84286d31acfe91f, type: 3}
       propertyPath: m_fontSize
@@ -537,6 +591,8 @@ MonoBehaviour:
   EndGameText: {fileID: 1454192061}
   EnemySpawnPoint: {fileID: 0}
   NextLevelButton: {fileID: 1266438819}
+  PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &235764713
 Transform:
   m_ObjectHideFlags: 0

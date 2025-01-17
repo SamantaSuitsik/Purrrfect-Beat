@@ -12,6 +12,9 @@ public class SceneController : MonoBehaviour
     public TextMeshProUGUI EndGameText;
     public Transform EnemySpawnPoint;
     public Button NextLevelButton;
+    public GameObject PauseMenuUI;
+    
+    public MusicTimer musicTimer;
 
     private bool isPaused = false;
 
@@ -41,7 +44,12 @@ public class SceneController : MonoBehaviour
         {
             Debug.LogError("No opponent selected!");
         }
-        
+
+        if (PauseMenuUI != null)
+        {
+            PauseMenuUI.SetActive(false); 
+        }
+
 
     }
 
@@ -49,25 +57,43 @@ public class SceneController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!isPaused)
-            {
-                PauseGame();
-            }
+            PauseGame();
         }
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
         isPaused = true;
-        Time.timeScale = 0f; 
-        SceneManager.LoadScene("Pause", LoadSceneMode.Additive); 
+        Time.timeScale = 0;
+
+        if (musicTimer != null)
+        {
+            musicTimer.PauseTimer();
+        }
+
+
+        if (PauseMenuUI != null)
+        {
+            PauseMenuUI.SetActive(true); 
+        }
     }
 
     public void ResumeGame()
     {
         isPaused = false;
-        Time.timeScale = 1f;
-        SceneManager.UnloadSceneAsync("Pause"); 
+        Time.timeScale = 1;
+
+        if (musicTimer != null)
+        {
+            musicTimer.ResumeTimer(); 
+        }
+
+        
+
+        if (PauseMenuUI != null)
+        {
+            PauseMenuUI.SetActive(false);
+        }
     }
 
     public void StartNewGame()
@@ -77,6 +103,7 @@ public class SceneController : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -103,6 +130,64 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("HowToPlay");
     }
+
+    public void LoadNextLevel()
+    {
+        
+        int currentLevel = GameManager.Instance.CurrentLevel;
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        
+        if (unlockedLevel == 1)
+        {
+            
+            string nextScene = $"Level{currentLevel + 1}";
+            if (nextScene == "Level2" || nextScene == "Level3")
+            {
+                nextScene = "ChooseOpponentStreet";
+            }
+
+            
+            SceneManager.LoadScene(nextScene);
+            Debug.Log($"Loading {nextScene}");
+        }
+
+        if (unlockedLevel == 2)
+        {
+
+            string nextScene = $"Level{currentLevel + 1}";
+            if (nextScene == "Level2" || nextScene == "Level3")
+            {
+                nextScene = "ChooseOpponentShelter";
+            }
+
+
+            SceneManager.LoadScene(nextScene);
+            Debug.Log($"Loading {nextScene}");
+        }
+
+        if (unlockedLevel == 3)
+        {
+
+            string nextScene = $"Level{currentLevel + 1}";
+            if (nextScene == "Level2" || nextScene == "Level3")
+            {
+                nextScene = "ChooseOpponentStreet";
+            }
+
+
+            SceneManager.LoadScene(nextScene);
+            Debug.Log($"Loading {nextScene}");
+        }
+
+
+
+        else
+        {
+            Debug.Log("Next level is locked or not yet available.");
+        }
+    }
+
 
 
 
