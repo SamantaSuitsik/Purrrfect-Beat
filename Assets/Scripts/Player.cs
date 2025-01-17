@@ -91,8 +91,7 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("Dead");
 
-            DelayEndGame();
-            Events.EndGame(false);
+            StartCoroutine(DelayEndGame(false));
         }
     }
 
@@ -103,13 +102,14 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("Dead");
 
-            DelayEndGame();
-            Events.EndGame(false);
+            StartCoroutine(DelayEndGame(false));
         }
     }
-    private IEnumerator DelayEndGame()
+    private IEnumerator DelayEndGame(bool isWin)
     {
-        yield return new WaitForSeconds(1.0f);  // Wait for 1 second before ending the game
+        yield return new WaitForSeconds(1.0f);
+        
+        Events.EndGame(isWin);
         
     }
 }

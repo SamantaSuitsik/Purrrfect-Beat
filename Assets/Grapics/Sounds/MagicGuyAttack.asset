@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MagicGuyAttack
   m_EditorClassIdentifier: 
   VolumeMin: 0.147
-  VolumeMax: 0.404
+  VolumeMax: 0.266
   PitchMin: 0.642
-  PitchMax: 1.766
+  PitchMax: 1.45
   Cooldown: 1
   Clips:
   - {fileID: 8300000, guid: 622d13038761e5868b214a41e2961274, type: 3}

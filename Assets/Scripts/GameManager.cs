@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -12,7 +13,11 @@ public class GameManager : MonoBehaviour
     public GameObject SelectedOpponentPrefab { get; private set; }
     public AudioClip Music { get; private set; }
     public float SongBpm { get; private set; }
-    public int DifficultyMultiplier { get; set; }
+    public int  beatsShownInAdvance { get; set; }
+    public float MaxBeatInterval { get; set; }
+    public float MinBeatInterval { get; set; }
+    public float Damage { get; set; }
+    public float PlayerDamage { get; set; }
     public AudioClipGroup DodgeSound { get; set; }
     public AudioClipGroup AttackSound { get; set; }
     private bool isSongStarted;
@@ -101,16 +106,21 @@ public class GameManager : MonoBehaviour
     }
 
     public void SelectOpponent(GameObject opponentPrefab, AudioClip opponentMusic, float opponentSongBpm,
-        int difficulty, AudioClipGroup dodgeSound, AudioClipGroup oppAttackSound, int currentLevel, int currentOpponent)
+        int difficulty, AudioClipGroup dodgeSound, AudioClipGroup oppAttackSound, int currentLevel, int currentOpponent,
+        float minBeatInterval, float maxBeatInterval, float damage, float playerDamage)
     {
         SelectedOpponentPrefab = opponentPrefab;
         Music = opponentMusic;
         SongBpm = opponentSongBpm;
-        DifficultyMultiplier = difficulty;
+        beatsShownInAdvance = difficulty;
         DodgeSound = dodgeSound;
         AttackSound = oppAttackSound;
         CurrentLevel = currentLevel;
         CurrentOpponent = currentOpponent;
+        MinBeatInterval = minBeatInterval;
+        MaxBeatInterval = maxBeatInterval;
+        Damage = damage;
+        PlayerDamage = playerDamage;
     }
 
     private void Update()

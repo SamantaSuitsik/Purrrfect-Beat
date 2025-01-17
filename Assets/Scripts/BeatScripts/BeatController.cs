@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,7 @@ public class BeatController : MonoBehaviour
     public GameObject BeatPrefab;
     public RectTransform Canvas;
     private EndPointController endPointController;
+    private float playerDamage = 0.2f;
 
     // // Milestone 2 
     // // Mida väiksemad arvud seda pikem delay
@@ -39,8 +41,9 @@ public class BeatController : MonoBehaviour
     //the current position of the song (in beats)
     public float songPosInBeats;
     public int beatsShownInAdvance = 3;
-    private static float maxHitDistance = 0.8f;
+    private static float maxHitDistance = 2.5f;
     private bool isBeatPanelLocked;
+    private bool isBeatSpawningStarted;
 
     void Awake()
     {
@@ -60,7 +63,7 @@ public class BeatController : MonoBehaviour
     private void OnDestroy()
     {
         Events.OnSetLockBarLetter -= LockTheBeatBar;
-        Events.OnUnlockPanel += UnlockPanel;
+        Events.OnUnlockPanel -= UnlockPanel;
     }
 
     private void UnlockPanel()
@@ -77,28 +80,22 @@ public class BeatController : MonoBehaviour
     {
         // general
         endPointController = HitPoint.GetComponent<EndPointController>();
+        playerDamage = GameManager.Instance.PlayerDamage;
         
         // music
         musicSource = GetComponent<AudioSource>();
         SongBpm = GameManager.Instance.SongBpm;
+        beatsShownInAdvance = GameManager.Instance.beatsShownInAdvance;
+        MaxBeatInterval = GameManager.Instance.MaxBeatInterval;
+        MinBeatInterval = GameManager.Instance.MinBeatInterval;
         
         SecPerBeat = 60f / SongBpm;
         DspSongTime = (float)AudioSettings.dspTime;
-
+        
         musicSource.clip = GameManager.Instance.Music;
         musicSource.Play();
         Events.SetSongStart();
 
-        // Here we can change difficulty.
-        // When the difficulty is larger than the game is easier
-        // It is achieved by letting the beats have fewer choices
-        // for choosing a random spawn time.
-        
-        // Milestone 2
-        // spawnDelayListLength = GameManager.Instance.DifficultyMultiplier;
-        //
-        // BeatSpawnInterval = SecPerBeat;
-        // nextBeatTime = (float)AudioSettings.dspTime + BeatSpawnInterval;
         SongDurationMinutes = musicSource.clip.length;
         GenerateBeatPositions();
     }
@@ -202,19 +199,19 @@ public class BeatController : MonoBehaviour
             if (timeDiff < 0.2f)
             {
                 Debug.Log("Ultra hit!");
-                Events.SetDamagePower(0.02f);
+                Events.SetDamagePower(playerDamage);
                 Events.BeatHit(true);
                 endPointController.OnUltraHit();
             }
             else if (timeDiff < 0.7f)
             {
                 Debug.Log("good hit!");
-                Events.SetDamagePower(0.015f);
+                Events.SetDamagePower(playerDamage-0.005f);
                 Events.BeatHit(true);
                 endPointController.OnHit();
             }
             else if (timeDiff < 1f) {
-                Events.SetDamagePower(0.01f);
+                Events.SetDamagePower(playerDamage-0.01f);
                 Events.BeatHit(true);
                 endPointController.OnBadHit();
             }

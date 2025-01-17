@@ -17,11 +17,8 @@ public class HUD : MonoBehaviour
         Events.OnSetHealth += SetHealth;
         Events.OnRequestEnemyHealth += RequestEnemyHealth;
         Events.OnRequestHealth += RequestHealth;
-
-
     }
-
-
+    
     private void OnDestroy()
     {
         Events.OnSetEnemyHealth -= SetEnemyHealth;
@@ -41,25 +38,12 @@ public class HUD : MonoBehaviour
 
     private void SetHealth(float obj)
     {
-        if(Events.RequestHealth() > obj)
-        {
-
-        }
-        
         HealthBar.fillAmount = obj;
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-
-    }
+    
     private void SetEnemyHealth(float value)
     {
+        Debug.Log("setting enemy health to " + value);
         EnemyHealthBar.fillAmount = value;
     }
 }

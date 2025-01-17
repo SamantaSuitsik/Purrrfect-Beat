@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
   m_Name: Losing
   m_EditorClassIdentifier: 
-  VolumeMin: 0.318
-  VolumeMax: 0.329
+  VolumeMin: 0.082
+  VolumeMax: 0.144
   PitchMin: 0.8
   PitchMax: 1.2
   Cooldown: 0.3

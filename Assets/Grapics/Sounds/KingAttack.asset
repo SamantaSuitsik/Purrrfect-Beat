@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63f8370e0bd79248a99a1b6aedcf8f5, type: 3}
   m_Name: KingAttack
   m_EditorClassIdentifier: 
-  VolumeMin: 0.491
-  VolumeMax: 0.755
+  VolumeMin: 0.269
+  VolumeMax: 0.474
   PitchMin: 0.589
-  PitchMax: 1.636
+  PitchMax: 1.44
   Cooldown: 0.5
   Clips:
   - {fileID: 8300000, guid: ca60f23b957811c44aa07272d0578b43, type: 3}

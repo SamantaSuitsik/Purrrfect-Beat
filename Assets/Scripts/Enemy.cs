@@ -119,6 +119,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         nextAttackTime = Time.time + GetRandomAttackDelay();
         nextDodgeTime = Time.time + GetRandomDodgeDelay();
+        Damage = GameManager.Instance.Damage;
         Events.SetEnemyHealth(health);
     }
 
@@ -218,16 +219,16 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             animator.SetTrigger("Dead");
-            DelayEndGame();
-            Events.EndGame(true);
+            StartCoroutine(DelayEndGame(true));
 
         }
     }
 
 
-    private IEnumerator DelayEndGame()
+    private IEnumerator DelayEndGame(bool isWin)
     {
-        yield return new WaitForSeconds(1.0f);  // Wait for 1 second before ending the game
+        yield return new WaitForSeconds(1.0f); 
+        Events.EndGame(isWin);
     }
 
     private void CheckHealthOnMusicEnd()
@@ -240,12 +241,8 @@ public class Enemy : MonoBehaviour
         
         if (Events.RequestEnemyHealth() < Events.RequestHealth())
         {
-            
-
             animator.SetTrigger("Dead");
-
-            DelayEndGame(); 
-            Events.EndGame(true);
+            StartCoroutine(DelayEndGame(true)); 
         }
     }
 
