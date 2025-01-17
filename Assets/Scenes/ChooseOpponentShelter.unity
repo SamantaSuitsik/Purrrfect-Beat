@@ -273,6 +273,8 @@ MonoBehaviour:
   EndGameText: {fileID: 0}
   EnemySpawnPoint: {fileID: 0}
   NextLevelButton: {fileID: 0}
+  PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &38626538
 Transform:
   m_ObjectHideFlags: 0
@@ -536,11 +538,11 @@ MonoBehaviour:
   opponentPrefab: {fileID: 2289438635920556873, guid: b4179b9a809487b4396548dd13e5771e, type: 3}
   opponentMusic: {fileID: 8300000, guid: 7e6208dc469a4e98cb5298435b2bb367, type: 3}
   opponentSongBpm: 125
-  beatsShownInAdvance: 3
-  MaxBeatInterval: 3
-  MinBeatInterval: 1
-  Damage: 0.01
-  playerDamage: 0.02
+  beatsShownInAdvance: 7
+  MaxBeatInterval: 2
+  MinBeatInterval: 0.5
+  Damage: 0.0038
+  playerDamage: 0.0055
   dodgeSound: {fileID: 0}
   attackSound: {fileID: 11400000, guid: f93ebd7dba1838dc38433d65ea16e866, type: 2}
   Scene: Shelter
@@ -1049,13 +1051,13 @@ MonoBehaviour:
   CurrentLevel: 2
   CurrentOpponent: 1
   opponentPrefab: {fileID: 8967218788191323227, guid: 75ec0efb928a07ef1bc02ee365696bc3, type: 3}
-  opponentMusic: {fileID: 8300000, guid: 40de9c7be4adeec2fad5d25df6d2bc7d, type: 3}
+  opponentMusic: {fileID: 8300000, guid: 86de2560fc7e3dc5c8f0647a25a86464, type: 3}
   opponentSongBpm: 160
   beatsShownInAdvance: 3
   MaxBeatInterval: 3
   MinBeatInterval: 1
-  Damage: 0.01
-  playerDamage: 0.008
+  Damage: 0.004
+  playerDamage: 0.0085
   dodgeSound: {fileID: 11400000, guid: 13071e583d3077d49a0b35bcf1fcea8f, type: 2}
   attackSound: {fileID: 11400000, guid: c2601c079699dcf5eaff8dd1e71a67d0, type: 2}
   Scene: Shelter
@@ -1987,11 +1989,11 @@ MonoBehaviour:
   opponentPrefab: {fileID: 5823021972489219557, guid: d199a5d5e601f8976b56ce0161558e55, type: 3}
   opponentMusic: {fileID: 8300000, guid: 7d3c2da7090b7f2ef9d31abb4e4e5bd8, type: 3}
   opponentSongBpm: 157
-  beatsShownInAdvance: 3
+  beatsShownInAdvance: 5
   MaxBeatInterval: 3
   MinBeatInterval: 1
-  Damage: 0.01
-  playerDamage: 0.02
+  Damage: 0.006
+  playerDamage: 0.0068
   dodgeSound: {fileID: 0}
   attackSound: {fileID: 11400000, guid: 4288bad5ad93808498f0d18c224503a9, type: 2}
   Scene: Shelter
@@ -2256,6 +2258,8 @@ MonoBehaviour:
   EndGameText: {fileID: 0}
   EnemySpawnPoint: {fileID: 0}
   NextLevelButton: {fileID: 0}
+  PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &1937893453
 Transform:
   m_ObjectHideFlags: 0

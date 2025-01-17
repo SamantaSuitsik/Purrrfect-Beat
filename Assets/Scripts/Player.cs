@@ -24,7 +24,8 @@ public class Player : MonoBehaviour
         Events.OnSetHealth += UpdateHealth;
         Events.OnMusicEnd += CheckHealthOnMusicEnd;
         Events.OnBeatHit += BeatHit;
-
+        Events.OnSetLockBarLetter += SetLockBarLetter;
+        Events.OnUnlockPanel += UnlockPanel;
 
     }
 
@@ -33,6 +34,18 @@ public class Player : MonoBehaviour
         Events.OnSetHealth -= UpdateHealth;
         Events.OnMusicEnd -= CheckHealthOnMusicEnd;
         Events.OnBeatHit -= BeatHit;
+        Events.OnSetLockBarLetter -= SetLockBarLetter;
+        Events.OnUnlockPanel -= UnlockPanel;
+    }
+
+    private void UnlockPanel()
+    {
+        animator.SetTrigger("GotUp");
+    }
+
+    private void SetLockBarLetter(char obj)
+    {
+        animator.SetTrigger("Died");
     }
 
 
@@ -89,8 +102,7 @@ public class Player : MonoBehaviour
             
         if (health <= 0)
         {
-            animator.SetTrigger("Dead");
-
+            animator.SetTrigger("Died");
             StartCoroutine(DelayEndGame(false));
         }
     }
@@ -100,15 +112,13 @@ public class Player : MonoBehaviour
     {
         if (Events.RequestEnemyHealth() > Events.RequestHealth())
         {
-            animator.SetTrigger("Dead");
-
+            animator.SetTrigger("Died");
             StartCoroutine(DelayEndGame(false));
         }
     }
     private IEnumerator DelayEndGame(bool isWin)
     {
         yield return new WaitForSeconds(1.0f);
-        
         Events.EndGame(isWin);
         
     }

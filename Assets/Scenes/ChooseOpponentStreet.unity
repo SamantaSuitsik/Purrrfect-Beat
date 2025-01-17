@@ -491,8 +491,8 @@ MonoBehaviour:
   opponentMusic: {fileID: 8300000, guid: f7dde5623bfb0135286830a31e30f5f4, type: 3}
   opponentSongBpm: 80
   beatsShownInAdvance: 3
-  MaxBeatInterval: 2
-  MinBeatInterval: 1
+  MaxBeatInterval: 3
+  MinBeatInterval: 0.5
   Damage: 0.01
   playerDamage: 0.02
   dodgeSound: {fileID: 0}
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   beatsShownInAdvance: 3
   MaxBeatInterval: 5
   MinBeatInterval: 1
-  Damage: 0.0075
+  Damage: 0.006
   playerDamage: 0.02
   dodgeSound: {fileID: 11400000, guid: 13071e583d3077d49a0b35bcf1fcea8f, type: 2}
   attackSound: {fileID: 11400000, guid: c2601c079699dcf5eaff8dd1e71a67d0, type: 2}
@@ -1668,6 +1668,8 @@ MonoBehaviour:
   EndGameText: {fileID: 0}
   EnemySpawnPoint: {fileID: 0}
   NextLevelButton: {fileID: 0}
+  PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &1554274551
 Transform:
   m_ObjectHideFlags: 0
@@ -1932,9 +1934,9 @@ MonoBehaviour:
   opponentPrefab: {fileID: 5823021972489219557, guid: d199a5d5e601f8976b56ce0161558e55, type: 3}
   opponentMusic: {fileID: 8300000, guid: eb8ca48c7f5897054b7b16b6bfcaa3fd, type: 3}
   opponentSongBpm: 85
-  beatsShownInAdvance: 5
-  MaxBeatInterval: 1
-  MinBeatInterval: 3
+  beatsShownInAdvance: 3
+  MaxBeatInterval: 3
+  MinBeatInterval: 1
   Damage: 0.01
   playerDamage: 0.02
   dodgeSound: {fileID: 0}
@@ -2482,6 +2484,8 @@ MonoBehaviour:
   EndGameText: {fileID: 0}
   EnemySpawnPoint: {fileID: 0}
   NextLevelButton: {fileID: 0}
+  PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &1937893453
 Transform:
   m_ObjectHideFlags: 0
