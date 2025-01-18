@@ -1370,6 +1370,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 624639303082806080, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
+      propertyPath: dodgeCooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4988989241526036711, guid: 7e8445ba4fd3e804280c4114484e2b5d, type: 3}
       propertyPath: m_FlipX
       value: 0

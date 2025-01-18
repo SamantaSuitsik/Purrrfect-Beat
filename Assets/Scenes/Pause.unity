@@ -1377,6 +1377,7 @@ MonoBehaviour:
   EnemySpawnPoint: {fileID: 0}
   NextLevelButton: {fileID: 0}
   PauseMenuUI: {fileID: 0}
+  musicTimer: {fileID: 0}
 --- !u!4 &2044920094
 Transform:
   m_ObjectHideFlags: 0

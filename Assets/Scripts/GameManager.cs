@@ -137,6 +137,7 @@ public class GameManager : MonoBehaviour
         else
         {
             barLockTimer -= Time.deltaTime;
+            
         }
     }
 

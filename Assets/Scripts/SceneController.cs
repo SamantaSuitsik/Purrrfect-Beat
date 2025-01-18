@@ -183,7 +183,7 @@ public class SceneController : MonoBehaviour
             string nextScene = $"Level{currentLevel + 1}";
             if (nextScene == "Level2" || nextScene == "Level3")
             {
-                nextScene = "ChooseOpponentStreet";
+                nextScene = "ChooseOpponentHome";
             }
 
 
@@ -220,17 +220,29 @@ public class SceneController : MonoBehaviour
 
     void UpdateEndGameText()
     {
+        int currentLevel = GameManager.Instance.CurrentLevel;
+
         if (EndGameText != null)
         {
             if (Events.GameResult)
             {
-                EndGameText.text = "Great! You won!";
-                EndGameMusicManager.Instance.PlayWinMusic();
-
-                if (NextLevelButton != null)
+                if (currentLevel == 3 && GameManager.Instance.SelectedOpponentPrefab.name == "KingMewrthur")
                 {
-                    NextLevelButton.gameObject.SetActive(true);
+                    EndGameText.text = "Great! You won!" +
+                        "The Game is completed!";
+                    EndGameMusicManager.Instance.PlayWinMusic();
                 }
+                else
+                {
+                    EndGameText.text = "Great! You won!";
+                    EndGameMusicManager.Instance.PlayWinMusic();
+
+                    if (NextLevelButton != null)
+                    {
+                        NextLevelButton.gameObject.SetActive(true);
+                    }
+                }
+                
             }
             else
             {
