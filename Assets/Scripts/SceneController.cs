@@ -135,6 +135,12 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+    
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    
 
     public void LoadNextLevel()
     {

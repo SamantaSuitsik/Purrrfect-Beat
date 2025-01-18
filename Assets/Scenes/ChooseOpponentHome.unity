@@ -1859,8 +1859,8 @@ MonoBehaviour:
   beatsShownInAdvance: 3
   MaxBeatInterval: 2
   MinBeatInterval: 0.5
-  Damage: 0.0075
-  playerDamage: 0.006
+  Damage: 0.007
+  playerDamage: 0.007
   dodgeSound: {fileID: 11400000, guid: 4288bad5ad93808498f0d18c224503a9, type: 2}
   attackSound: {fileID: 11400000, guid: 4288bad5ad93808498f0d18c224503a9, type: 2}
   Scene: Home
