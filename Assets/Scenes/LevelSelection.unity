@@ -534,7 +534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2. Crowded Shelter
+  m_text: II Crowded Shelter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
   m_sharedMaterial: {fileID: -5794547126978979126, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. Sweet Home
+  m_text: III Sweet Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
   m_sharedMaterial: {fileID: -5794547126978979126, guid: 285738b6472f622efa15593ec6a8066a, type: 2}
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46755964, g: 0.5055863, b: 0.745283, a: 1}
+  m_Color: {r: 0.15294118, g: 0.20392157, b: 0.20784314, a: 0.2784314}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1678,7 +1678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Lonely Street
+  m_text: 'I Lonely Street
 
 '
   m_isRightToLeft: 0

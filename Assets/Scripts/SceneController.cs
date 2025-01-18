@@ -130,6 +130,11 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("HowToPlay");
     }
+    
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 
     public void LoadNextLevel()
     {

@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Lonely Street
+  m_text: 'I Lonely Street
 
     Choose your opponent'
   m_isRightToLeft: 0
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46755964, g: 0.5055863, b: 0.745283, a: 1}
+  m_Color: {r: 0.15294118, g: 0.20392157, b: 0.20784314, a: 0.2784314}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
