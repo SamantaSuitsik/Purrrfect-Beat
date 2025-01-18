@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1163,7 +1163,8 @@ MonoBehaviour:
   - Purrrfect! You hit the beat. Now dodge the opponent's attacks! LEFT ARROW key
   - Be careful! The enemy dealt damage. Stay alert.
   - Press the correct key to proceed!
-  - You did it! Now you're ready for the duel. Mrrrr
+  - You did it! Now you're ready for the duel. Mrrrr  If you want to take a break,
+    feel free to press ESC.
   beatPanel: {fileID: 2560704487600695644}
   lockPanel: {fileID: 4150571959868609862}
   musicTimer: {fileID: 945164233}

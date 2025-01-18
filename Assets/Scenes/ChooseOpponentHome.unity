@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'III Sweet Home
+  m_text: '3. Sweet Home
 
     Choose your opponent'
   m_isRightToLeft: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class InGameGuide : MonoBehaviour
 {
@@ -15,10 +16,22 @@ public class InGameGuide : MonoBehaviour
     public GameObject lockPanel;
     public MusicTimer musicTimer;
 
-    private void Start()
+    void Start()
     {
+
+        if (hintPanel != null)
+        {
+            hintPanel.SetActive(false);
+            print("hintpanel is NULL");
+        }
+
+        if (currentStep == 0)
+        {
+            print("calling firts hint");
+            StartCoroutine(ShowHintWithDelay(0, 0.5f));
+        }
         // Waiting for the first beat
-        InvokeRepeating(nameof(CheckForBeats), 0.5f, 0.5f);
+        //InvokeRepeating(nameof(CheckForBeats), 0.5f, 0.5f);
     }
 
     private void Update()
@@ -35,7 +48,7 @@ public class InGameGuide : MonoBehaviour
         }
     }
 
-    private void CheckForBeats()
+    /*private void CheckForBeats()
     {
         int currentLevel = GameManager.Instance.CurrentLevel;
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
@@ -49,13 +62,15 @@ public class InGameGuide : MonoBehaviour
             }
         
        
-    }
+    }*/
+
+    
 
     public void OnBeatHit() // Beat on hit successful
     {
         if (currentStep == 1)
         {
-            ShowHint(1); // Second hint
+            StartCoroutine(ShowHintWithDelay(1, 0.5f)); // Second hint
         }
     }
 
@@ -63,7 +78,7 @@ public class InGameGuide : MonoBehaviour
     {
         if (currentStep == 2)
         {
-            ShowHint(2); // Third hint
+            StartCoroutine(ShowHintWithDelay(2, 0.5f)); // Third hint
         }
     }
 
@@ -71,7 +86,7 @@ public class InGameGuide : MonoBehaviour
     {
         if (currentStep == 3)
         {
-            StartCoroutine(ShowHintWithDelay(3, 1f)); // Hint 4 with delay
+            StartCoroutine(ShowHintWithDelay(3, 0.5f)); // Hint 4 with delay
         }
     }
 
@@ -81,21 +96,29 @@ public class InGameGuide : MonoBehaviour
         {
             StartCoroutine(ShowHintWithDelay(4, 1f)); // Hint 5 with delay
         }
+
     }
+
 
     private void ShowHint(int stepIndex)
     {
         int currentLevel = GameManager.Instance.CurrentLevel;
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        print("currentlevel = " + currentLevel);
+        string opponent = GameManager.Instance.SelectedOpponentPrefab.name;
+        print("oponnent name = " + opponent);
 
-        if (unlockedLevel == 1 && currentLevel == 1)
+        if (currentLevel == 1 && opponent == "BowGuy")
         {
             hintPanel.SetActive(true);
             hintText.text = guideSteps[stepIndex];
             PauseGame();
             currentStep = stepIndex + 1;
+            
         }
-        
+        else
+        {
+            Debug.LogWarning("Opponent or opponentButtons not set properly.");
+        }
     }
 
     private IEnumerator ShowHintWithDelay(int stepIndex, float delay)
